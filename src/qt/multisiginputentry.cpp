@@ -127,12 +127,12 @@ void MultisigInputEntry::on_transactionId_textChanged(const QString &transaction
         CTxDestination addr;
         if(ExtractDestination(script, addr))
         {
-            CAmsterdamCoinAddress address(addr);
+            CXDE2Address address(addr);
             QString addressStr(address.ToString().c_str());
-            ui->transactionOutput->addItem(idStr + QString(" - ") + addressStr + QString(" - ") + amountStr + QString(" AMS"));
+            ui->transactionOutput->addItem(idStr + QString(" - ") + addressStr + QString(" - ") + amountStr + QString(" XDE2"));
         }
         else
-            ui->transactionOutput->addItem(idStr + QString(" - ") + amountStr + QString(" AMS"));
+            ui->transactionOutput->addItem(idStr + QString(" - ") + amountStr + QString(" XDE2"));
     }
 }
 

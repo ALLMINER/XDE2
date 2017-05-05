@@ -10,7 +10,7 @@ SetCompressor /SOLID lzma
 !define URL http://www.novacoin.ru/
 
 # MUI Symbol Definitions
-!define MUI_ICON "../share/pixmaps/amsterdamcoin.ico"
+!define MUI_ICON "../share/pixmaps/XDE2.ico"
 !define MUI_WELCOMEFINISHPAGE_BITMAP "../share/pixmaps/nsis-wizard.bmp"
 !define MUI_HEADERIMAGE
 !define MUI_HEADERIMAGE_RIGHT
@@ -20,7 +20,7 @@ SetCompressor /SOLID lzma
 !define MUI_STARTMENUPAGE_REGISTRY_KEY ${REGKEY}
 !define MUI_STARTMENUPAGE_REGISTRY_VALUENAME StartMenuGroup
 !define MUI_STARTMENUPAGE_DEFAULTFOLDER NovaCoin
-#!define MUI_FINISHPAGE_RUN $INSTDIR\amsterdamcoin-qt.exe
+#!define MUI_FINISHPAGE_RUN $INSTDIR\XDE2-qt.exe
 !define MUI_UNICON "${NSISDIR}\Contrib\Graphics\Icons\modern-uninstall.ico"
 !define MUI_UNWELCOMEFINISHPAGE_BITMAP "../share/pixmaps/nsis-wizard.bmp"
 !define MUI_UNFINISHPAGE_NOAUTOCLOSE
@@ -45,7 +45,7 @@ Var StartMenuGroup
 !insertmacro MUI_LANGUAGE English
 
 # Installer attributes
-OutFile amsterdamcoin-0.3.0-win32-setup.exe
+OutFile XDE2-0.3.0-win32-setup.exe
 InstallDir $PROGRAMFILES\NovaCoin
 CRCCheck on
 XPStyle on
@@ -66,7 +66,7 @@ ShowUninstDetails show
 Section -Main SEC0000
     SetOutPath $INSTDIR
     SetOverwrite on
-    #File ../release/amsterdamcoin-qt.exe
+    #File ../release/XDE2-qt.exe
     File /oname=license.txt ../COPYING
     File /oname=readme.txt ../doc/README_windows.txt
     SetOutPath $INSTDIR\daemon
@@ -86,8 +86,8 @@ Section -post SEC0001
     SetOutPath $INSTDIR
     WriteUninstaller $INSTDIR\uninstall.exe
     !insertmacro MUI_STARTMENU_WRITE_BEGIN Application
-    CreateDirectory $SMPROGRAMS\$StartMenuGroup
-    CreateShortcut "$SMPROGRAMS\$StartMenuGroup\Uninstall NovaCoin.lnk" $INSTDIR\uninstall.exe
+    CreateDirectory $SMPROGRXDE2\$StartMenuGroup
+    CreateShortcut "$SMPROGRXDE2\$StartMenuGroup\Uninstall NovaCoin.lnk" $INSTDIR\uninstall.exe
     !insertmacro MUI_STARTMENU_WRITE_END
     WriteRegStr HKCU "SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\$(^Name)" DisplayName "$(^Name)"
     WriteRegStr HKCU "SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\$(^Name)" DisplayVersion "${VERSION}"
@@ -102,7 +102,7 @@ Section -post SEC0001
     #    WriteRegStr HKCR "bitcoin" "URL Protocol" ""
     #    WriteRegStr HKCR "bitcoin" "" "URL:Bitcoin"
     #    WriteRegStr HKCR "bitcoin\DefaultIcon" "" $INSTDIR\bitcoin-qt.exe
-    #    WriteRegStr HKCR "bitcoin\amsterdamcoin\open\command" "" '"$INSTDIR\bitcoin-qt.exe" "$$1"'
+    #    WriteRegStr HKCR "bitcoin\XDE2\open\command" "" '"$INSTDIR\bitcoin-qt.exe" "$$1"'
 SectionEnd
 
 # Macro for selecting uninstaller sections
@@ -120,7 +120,7 @@ done${UNSECTION_ID}:
 
 # Uninstaller sections
 Section /o -un.Main UNSEC0000
-    #Delete /REBOOTOK $INSTDIR\amsterdamcoin-qt.exe
+    #Delete /REBOOTOK $INSTDIR\XDE2-qt.exe
     Delete /REBOOTOK $INSTDIR\license.txt
     Delete /REBOOTOK $INSTDIR\readme.txt
     RMDir /r /REBOOTOK $INSTDIR\daemon
@@ -130,8 +130,8 @@ SectionEnd
 
 Section -un.post UNSEC0001
     DeleteRegKey HKCU "SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\$(^Name)"
-    Delete /REBOOTOK "$SMPROGRAMS\$StartMenuGroup\Uninstall NovaCoin.lnk"
-    #Delete /REBOOTOK "$SMPROGRAMS\$StartMenuGroup\Bitcoin.lnk"
+    Delete /REBOOTOK "$SMPROGRXDE2\$StartMenuGroup\Uninstall NovaCoin.lnk"
+    #Delete /REBOOTOK "$SMPROGRXDE2\$StartMenuGroup\Bitcoin.lnk"
     #Delete /REBOOTOK "$SMSTARTUP\Bitcoin.lnk"
     Delete /REBOOTOK $INSTDIR\uninstall.exe
     Delete /REBOOTOK $INSTDIR\debug.log
@@ -141,7 +141,7 @@ Section -un.post UNSEC0001
     DeleteRegKey /IfEmpty HKCU "${REGKEY}\Components"
     DeleteRegKey /IfEmpty HKCU "${REGKEY}"
     DeleteRegKey HKCR "novacoin"
-    RmDir /REBOOTOK $SMPROGRAMS\$StartMenuGroup
+    RmDir /REBOOTOK $SMPROGRXDE2\$StartMenuGroup
     RmDir /REBOOTOK $INSTDIR
     Push $R0
     StrCpy $R0 $StartMenuGroup 1

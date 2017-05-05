@@ -226,11 +226,11 @@ int CBase58Data::CompareTo(const CBase58Data& b58) const {
 }
 
 namespace {
-    class CAmsterdamCoinAddressVisitor : public boost::static_visitor<bool> {
+    class CXDE2AddressVisitor : public boost::static_visitor<bool> {
     private:
-        CAmsterdamCoinAddress *addr;
+        CXDE2Address *addr;
     public:
-        CAmsterdamCoinAddressVisitor(CAmsterdamCoinAddress *addrIn) : addr(addrIn) { }
+        CXDE2AddressVisitor(CXDE2Address *addrIn) : addr(addrIn) { }
 
         bool operator()(const CKeyID &id) const { return addr->Set(id); }
         bool operator()(const CScriptID &id) const { return addr->Set(id); }
@@ -250,28 +250,28 @@ namespace {
     };
 };
 
-bool CAmsterdamCoinAddress::Set(const CKeyID &id) {
+bool CXDE2Address::Set(const CKeyID &id) {
     SetData(Params().Base58Prefix(CChainParams::PUBKEY_ADDRESS), &id, 20);
     return true;
 }
 
-bool CAmsterdamCoinAddress::Set(const CScriptID &id) {
+bool CXDE2Address::Set(const CScriptID &id) {
     SetData(Params().Base58Prefix(CChainParams::SCRIPT_ADDRESS), &id, 20);
     return true;
 }
 
-bool CAmsterdamCoinAddress::Set(const CTxDestination &dest) {
-    return boost::apply_visitor(CAmsterdamCoinAddressVisitor(this), dest);
+bool CXDE2Address::Set(const CTxDestination &dest) {
+    return boost::apply_visitor(CXDE2AddressVisitor(this), dest);
 }
 
-bool CAmsterdamCoinAddress::IsValid() const {
+bool CXDE2Address::IsValid() const {
     bool fCorrectSize = vchData.size() == 20;
     bool fKnownVersion = vchVersion == Params().Base58Prefix(CChainParams::PUBKEY_ADDRESS) ||
                          vchVersion == Params().Base58Prefix(CChainParams::SCRIPT_ADDRESS);
     return fCorrectSize && fKnownVersion;
 }
 
-CTxDestination CAmsterdamCoinAddress::Get() const {
+CTxDestination CXDE2Address::Get() const {
     if (!IsValid())
         return CNoDestination();
     uint160 id;
@@ -284,7 +284,7 @@ CTxDestination CAmsterdamCoinAddress::Get() const {
         return CNoDestination();
 }
 
-bool CAmsterdamCoinAddress::GetKeyID(CKeyID &keyID) const {
+bool CXDE2Address::GetKeyID(CKeyID &keyID) const {
     if (!IsValid() || vchVersion != Params().Base58Prefix(CChainParams::PUBKEY_ADDRESS))
         return false;
     uint160 id;
@@ -293,34 +293,34 @@ bool CAmsterdamCoinAddress::GetKeyID(CKeyID &keyID) const {
     return true;
 }
 
-bool CAmsterdamCoinAddress::IsScript() const {
+bool CXDE2Address::IsScript() const {
     return IsValid() && vchVersion == Params().Base58Prefix(CChainParams::SCRIPT_ADDRESS);
 }
 
-void CAmsterdamCoinSecret::SetKey(const CKey& vchSecret) {
+void CXDE2Secret::SetKey(const CKey& vchSecret) {
     assert(vchSecret.IsValid());
     SetData(Params().Base58Prefix(CChainParams::SECRET_KEY), vchSecret.begin(), vchSecret.size());
     if (vchSecret.IsCompressed())
         vchData.push_back(1);
 }
 
-CKey CAmsterdamCoinSecret::GetKey() {
+CKey CXDE2Secret::GetKey() {
     CKey ret;
     ret.Set(&vchData[0], &vchData[32], vchData.size() > 32 && vchData[32] == 1);
     return ret;
 }
 
-bool CAmsterdamCoinSecret::IsValid() const {
+bool CXDE2Secret::IsValid() const {
     bool fExpectedFormat = vchData.size() == 32 || (vchData.size() == 33 && vchData[32] == 1);
     bool fCorrectVersion = vchVersion == Params().Base58Prefix(CChainParams::SECRET_KEY);
     return fExpectedFormat && fCorrectVersion;
 }
 
-bool CAmsterdamCoinSecret::SetString(const char* pszSecret) {
+bool CXDE2Secret::SetString(const char* pszSecret) {
     return CBase58Data::SetString(pszSecret) && IsValid();
 }
 
-bool CAmsterdamCoinSecret::SetString(const std::string& strSecret) {
+bool CXDE2Secret::SetString(const std::string& strSecret) {
     return SetString(strSecret.c_str());
 }
 

@@ -86,7 +86,7 @@ Value darksend(const Array& params, bool fHelp)
             "<amount> is type \"real\" and will be rounded to the nearest 0.1"
             + HelpRequiringPassphrase());
 
-    CAmsterdamCoinAddress address(params[0].get_str());
+    CXDE2Address address(params[0].get_str());
     if (!address.IsValid())
         throw JSONRPCError(RPC_INVALID_ADDRESS_OR_KEY, "Invalid XDE2 address");
 
@@ -160,8 +160,8 @@ Value masternode(const Array& params, bool fHelp)
                 "  stop-alias   - Stop single masternode by assigned alias configured in masternode.conf\n"
                 "  stop-many    - Stop all masternodes configured in masternode.conf\n"
                 "  winners      - Print list of masternode winners\n"
-                "  vote-many    - Vote on a AmsterdamCoin initiative\n"
-                "  vote         - Vote on a AmsterdamCoin initiative\n"
+                "  vote-many    - Vote on a XDE2 initiative\n"
+                "  vote         - Vote on a XDE2 initiative\n"
                 );
 
     if (strCommand == "stop")
@@ -514,7 +514,7 @@ Value masternode(const Array& params, bool fHelp)
             pubkey.SetDestination(winner->pubkey.GetID());
             CTxDestination address1;
             ExtractDestination(pubkey, address1);
-            CAmsterdamCoinAddress address2(address1);
+            CXDE2Address address2(address1);
 
             obj.push_back(Pair("IP:port",       winner->addr.ToString().c_str()));
             obj.push_back(Pair("protocol",      (int64_t)winner->protocolVersion));
@@ -533,7 +533,7 @@ Value masternode(const Array& params, bool fHelp)
         CKey secret;
         secret.MakeNewKey(false);
 
-        return CAmsterdamCoinSecret(secret).ToString();
+        return CXDE2Secret(secret).ToString();
     }
 
     if (strCommand == "winners")
@@ -550,7 +550,7 @@ Value masternode(const Array& params, bool fHelp)
             if(masternodePayments.GetBlockPayee(nHeight, payee, vin)){
                 CTxDestination address1;
                 ExtractDestination(payee, address1);
-                CAmsterdamCoinAddress address2(address1);
+                CXDE2Address address2(address1);
 
                 if(strMode == "addr")
                     obj.push_back(Pair(boost::lexical_cast<std::string>(nHeight),       address2.ToString().c_str()));
@@ -740,7 +740,7 @@ Value masternode(const Array& params, bool fHelp)
         pubkey = GetScriptForDestination(activeMasternode.pubKeyMasternode.GetID());
         CTxDestination address1;
         ExtractDestination(pubkey, address1);
-        CAmsterdamCoinAddress address2(address1);
+        CXDE2Address address2(address1);
 
         Object mnObj;
         mnObj.push_back(Pair("vin", activeMasternode.vin.ToString().c_str()));
@@ -782,7 +782,7 @@ Value masternodelist(const Array& params, bool fHelp)
                 "  rank           - Print rank of a masternode based on current block\n"
                 "  status         - Print masternode status: ENABLED / EXPIRED / VIN_SPENT / REMOVE / POS_ERROR (can be additionally filtered, partial match)\n"
                 "  addr            - Print ip address associated with a masternode (can be additionally filtered, partial match)\n"
-                "  votes          - Print all masternode votes for a AmsterdamCoin initiative (can be additionally filtered, partial match)\n"
+                "  votes          - Print all masternode votes for a XDE2 initiative (can be additionally filtered, partial match)\n"
                 "  lastpaid       - The last time a node was paid on the network\n"
                 );
     }
@@ -805,7 +805,7 @@ Value masternodelist(const Array& params, bool fHelp)
             } else if (strMode == "donation") {
                 CTxDestination address1;
                 ExtractDestination(mn.donationAddress, address1);
-                CAmsterdamCoinAddress address2(address1);
+                CXDE2Address address2(address1);
 
                 if(strFilter !="" && address2.ToString().find(strFilter) == string::npos &&
                     strVin.find(strFilter) == string::npos) continue;
@@ -823,7 +823,7 @@ Value masternodelist(const Array& params, bool fHelp)
                 pubkey.SetDestination(mn.pubkey.GetID());
                 CTxDestination address1;
                 ExtractDestination(pubkey, address1);
-                CAmsterdamCoinAddress address2(address1);
+                CXDE2Address address2(address1);
 
                 std::ostringstream addrStream;
                 addrStream << setw(21) << strVin;
@@ -854,7 +854,7 @@ Value masternodelist(const Array& params, bool fHelp)
                 pubkey.SetDestination(mn.pubkey.GetID());
                 CTxDestination address1;
                 ExtractDestination(pubkey, address1);
-                CAmsterdamCoinAddress address2(address1);
+                CXDE2Address address2(address1);
 
                 if(strFilter !="" && address2.ToString().find(strFilter) == string::npos &&
                     strVin.find(strFilter) == string::npos) continue;

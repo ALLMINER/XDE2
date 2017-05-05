@@ -7,23 +7,23 @@
 	<key>CFBundlePackageType</key>
 	<string>APPL</string>
 	<key>CFBundleGetInfoString</key>
-	<string>AmsterdamCoin-Qt</string>
+	<string>XDE2-Qt</string>
 	<key>CFBundleSignature</key>
 	<string>????</string>
 	<key>CFBundleExecutable</key>
-	<string>AmsterdamCoin-Qt</string>
+	<string>XDE2-Qt</string>
 	<key>CFBundleIdentifier</key>
-	<string>co.amsterdamcoin.AmsterdamCoin-Qt</string>
+	<string>co.XDE2.XDE2-Qt</string>
         <key>CFBundleURLTypes</key>
         <array>
           <dict>
             <key>CFBundleTypeRole</key>
             <string>Editor</string>
             <key>CFBundleURLName</key>
-            <string>co.amsterdamcoin.TransferPayment</string>
+            <string>co.XDE2.TransferPayment</string>
             <key>CFBundleURLSchemes</key>
             <array>
-              <string>amsterdamcoin</string>
+              <string>XDE2</string>
             </array>
           </dict>
         </array>

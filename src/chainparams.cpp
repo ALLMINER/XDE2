@@ -74,7 +74,7 @@ public:
         //    CTxIn(COutPoint(0000000000, 4294967295), coinbase 00012a24323020466562203230313420426974636f696e2041544d7320636f6d6520746f20555341)
         //    CTxOut(empty)
         //  vMerkleTree: 12630d16a9
-        const char* pszTimestamp = "Oktober 27, 2015: A great new start for AmsterdamCoin.";
+        const char* pszTimestamp = "Oktober 27, 2015: A great new start for XDE2.";
         std::vector<CTxIn> vin;
         vin.resize(1);
         vin[0].scriptSig = CScript() << 0 << CBigNum(42) << vector<unsigned char>((const unsigned char*)pszTimestamp, (const unsigned char*)pszTimestamp + strlen(pszTimestamp));
@@ -103,7 +103,7 @@ public:
         base58Prefixes[EXT_PUBLIC_KEY] = list_of(0x04)(0x88)(0xB2)(0x1E).convert_to_container<std::vector<unsigned char> >();
         base58Prefixes[EXT_SECRET_KEY] = list_of(0x04)(0x88)(0xAD)(0xE4).convert_to_container<std::vector<unsigned char> >();
 
-        vSeeds.push_back(CDNSSeedData("First",  "amsterdamcoin.blockexplorer.pro"));
+        vSeeds.push_back(CDNSSeedData("First",  "XDE2.blockexplorer.pro"));
 		vSeeds.push_back(CDNSSeedData("Second",  "amshost1.dyndns.org"));
 		vSeeds.push_back(CDNSSeedData("MidnightMiner",  "ams.midnightminer.net"));
 		vSeeds.push_back(CDNSSeedData("MidnightMiner2",  "ams2.midnightminer.net"));

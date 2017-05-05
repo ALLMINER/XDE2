@@ -151,7 +151,7 @@ void MultisigDialog::on_createAddressButton_clicked()
     CScript script;
     script.SetMultisig(required, pubkeys);
     CScriptID scriptID = script.GetID();
-    CAmsterdamCoinAddress address(scriptID);
+    CXDE2Address address(scriptID);
 
     ui->multisigAddress->setText(address.ToString().c_str());
     ui->redeemScript->setText(HexStr(script.begin(), script.end()).c_str());
@@ -203,8 +203,8 @@ void MultisigDialog::on_saveMultisigAddressButton_clicked()
     LOCK(wallet->cs_wallet);
     if(!wallet->HaveCScript(scriptID))
         wallet->AddCScript(script);
-    if(!wallet->mapAddressBook.count(CAmsterdamCoinAddress(address).Get()))
-        wallet->SetAddressBookName(CAmsterdamCoinAddress(address).Get(), label);
+    if(!wallet->mapAddressBook.count(CXDE2Address(address).Get()))
+        wallet->SetAddressBookName(CXDE2Address(address).Get(), label);
 }
 
 void MultisigDialog::clear()
@@ -270,7 +270,7 @@ void MultisigDialog::on_createTransactionButton_clicked()
             if(entry->validate())
             {
                 SendCoinsRecipient recipient = entry->getValue();
-                CAmsterdamCoinAddress address(recipient.address.toStdString());
+                CXDE2Address address(recipient.address.toStdString());
                 CScript scriptPubKey;
                 scriptPubKey.SetDestination(address.Get());
                 CAmount amount = recipient.amount;
@@ -334,7 +334,7 @@ void MultisigDialog::on_transaction_textChanged()
         CScript scriptPubKey = txout.scriptPubKey;
         CTxDestination addr;
         ExtractDestination(scriptPubKey, addr);
-        CAmsterdamCoinAddress address(addr);
+        CXDE2Address address(addr);
         SendCoinsRecipient recipient;
         recipient.address = QString(address.ToString().c_str());
         recipient.amount = txout.nValue;
@@ -477,13 +477,13 @@ void MultisigDialog::on_sendTransactionButton_clicked()
     CAmount minFee = MIN_TX_FEE * (1 + (CAmount) transactionSize / 1000);
     if(fee < minFee)
     {
-        QMessageBox::StandardButton ret = QMessageBox::question(this, tr("Confirm send transaction"), tr("The fee of the transaction (%1 AMS) is smaller than the expected fee (%2 AMS). Do you want to send the transaction anyway?").arg((double) fee / COIN).arg((double) minFee / COIN), QMessageBox::Yes | QMessageBox::Cancel, QMessageBox::Cancel);
+        QMessageBox::StandardButton ret = QMessageBox::question(this, tr("Confirm send transaction"), tr("The fee of the transaction (%1 XDE2) is smaller than the expected fee (%2 XDE2). Do you want to send the transaction anyway?").arg((double) fee / COIN).arg((double) minFee / COIN), QMessageBox::Yes | QMessageBox::Cancel, QMessageBox::Cancel);
         if(ret != QMessageBox::Yes)
             return;
     }
     else if(fee > minFee)
     {
-        QMessageBox::StandardButton ret = QMessageBox::question(this, tr("Confirm send transaction"), tr("The fee of the transaction (%1 AMS) is bigger than the expected fee (%2 AMS). Do you want to send the transaction anyway?").arg((double) fee / COIN).arg((double) minFee / COIN), QMessageBox::Yes | QMessageBox::Cancel, QMessageBox::Cancel);
+        QMessageBox::StandardButton ret = QMessageBox::question(this, tr("Confirm send transaction"), tr("The fee of the transaction (%1 XDE2) is bigger than the expected fee (%2 XDE2). Do you want to send the transaction anyway?").arg((double) fee / COIN).arg((double) minFee / COIN), QMessageBox::Yes | QMessageBox::Cancel, QMessageBox::Cancel);
         if(ret != QMessageBox::Yes)
             return;
     }

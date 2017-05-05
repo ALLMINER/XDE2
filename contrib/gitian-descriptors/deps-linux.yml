@@ -1,5 +1,5 @@
 ---
-name: "amsterdamcoin-deps"
+name: "XDE2-deps"
 suites:
 - "trusty"
 architectures:
@@ -135,5 +135,5 @@ script: |
   #
   #
   cd $STAGING
-  find include lib bin host | sort | zip -X@ $OUTDIR/amsterdamcoin-deps-linux${GBUILD_BITS}-gitian.zip
+  find include lib bin host | sort | zip -X@ $OUTDIR/XDE2-deps-linux${GBUILD_BITS}-gitian.zip
 

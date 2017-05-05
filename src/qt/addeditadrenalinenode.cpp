@@ -55,7 +55,7 @@ void AddEditAdrenalineNode::on_okButton_clicked()
     else if(ui->txhashLineEdit->text() == "")
     {
         QMessageBox msg;
-        msg.setText("Please enter the transaction hash for the transaction that has 100 000 AMS");
+        msg.setText("Please enter the transaction hash for the transaction that has 100 000 XDE2");
         msg.exec();
         return;
     }

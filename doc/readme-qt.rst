@@ -1,14 +1,14 @@
-AmsterdamCoin-qt: Qt5 GUI for AmsterdamCoin
+XDE2-qt: Qt5 GUI for XDE2
 ===============================
 
 Linux
 -------
-https://github.com/CoinProjects/AmsterdamCoin/blob/master/doc/build-unix.md
+https://github.com/CoinProjects/XDE2/blob/master/doc/build-unix.md
 
 Windows
 --------
-https://github.com/CoinProjects/AmsterdamCoin/blob/master/doc/build-msw.md
+https://github.com/CoinProjects/XDE2/blob/master/doc/build-msw.md
 
 Mac OS X
 --------
-https://github.com/CoinProjects/AmsterdamCoin/blob/master/doc/build-osx.md
+https://github.com/CoinProjects/XDE2/blob/master/doc/build-osx.md

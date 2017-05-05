@@ -24,7 +24,7 @@ if cmd == "backupwallet":
 
 elif cmd == "getaccount":
 	try:
-		addr = raw_input("Enter a AmsterdamCoin address: ")
+		addr = raw_input("Enter a XDE2 address: ")
 		print access.getaccount(addr)
 	except:
 		print "\n---An error occurred---\n"
@@ -126,7 +126,7 @@ elif cmd == "getreceivedbyaccount":
 
 elif cmd == "getreceivedbyaddress":
 	try:
-		addr = raw_input("Enter a AmsterdamCoin address (optional): ")
+		addr = raw_input("Enter a XDE2 address (optional): ")
 		mc = raw_input("Minimum confirmations (optional): ")
 		try:
 			print access.getreceivedbyaddress(addr, mc)

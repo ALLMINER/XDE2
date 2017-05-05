@@ -7,12 +7,12 @@ software written by Eric Young (eay@cryptsoft.com) and UPnP software written by
 Thomas Bernard.
 
 
-Mac OS X amsterdamcoind build instructions
+Mac OS X XDE2d build instructions
 Laszlo Hanyecz <solar@heliacal.net>
 Douglas Huff <dhuff@jrbobdobbs.org>
 
 
-See readme-qt.rst for instructions on building AmsterdamCoin QT, the
+See readme-qt.rst for instructions on building XDE2 QT, the
 graphical user interface.
 
 Tested on 10.5 and 10.6 intel.  PPC is not supported because it's big-endian.
@@ -27,7 +27,7 @@ but you can get the current version from http://developer.apple.com
 
 1.  Clone the github tree to get the source code:
 
-git clone http://github.com/amsterdamcoindev/amsterdamcoin amsterdamcoin
+git clone http://github.com/XDE2dev/XDE2 XDE2
 
 2.  Download and install MacPorts from http://www.macports.org/
 
@@ -41,14 +41,14 @@ sudo port install boost db48 openssl miniupnpc
 Optionally install qrencode (and set USE_QRCODE=1):
 sudo port install qrencode
 
-4.  Now you should be able to build amsterdamcoind:
+4.  Now you should be able to build XDE2d:
 
-cd amsterdamcoin/src
+cd XDE2/src
 make -f makefile.osx
 
 Run:
-  ./amsterdamcoind --help  # for a list of command-line options.
+  ./XDE2d --help  # for a list of command-line options.
 Run
-  ./amsterdamcoind -daemon # to start the amsterdamcoin daemon.
+  ./XDE2d -daemon # to start the XDE2 daemon.
 Run
-  ./amsterdamcoind help # When the daemon is running, to get a list of RPC commands
+  ./XDE2d help # When the daemon is running, to get a list of RPC commands

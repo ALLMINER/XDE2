@@ -1,5 +1,5 @@
 #!/bin/bash
 # create multiresolution windows icon
-ICON_DST=../../src/qt/res/icons/amsterdamcoin.ico
+ICON_DST=../../src/qt/res/icons/XDE2.ico
 
-convert ../../src/qt/res/icons/amsterdamcoin-16.png ../../src/qt/res/icons/amsterdamcoin-32.png ../../src/qt/res/icons/amsterdamcoin-48.png ${ICON_DST}
+convert ../../src/qt/res/icons/XDE2-16.png ../../src/qt/res/icons/XDE2-32.png ../../src/qt/res/icons/XDE2-48.png ${ICON_DST}

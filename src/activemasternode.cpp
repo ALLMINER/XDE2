@@ -9,7 +9,7 @@
 #include "clientversion.h"
 
 //
-// Bootup the masternode, look for a 500 AMS input and register on the network
+// Bootup the masternode, look for a 500 XDE2 input and register on the network
 //
 void CActiveMasternode::ManageStatus()
 {
@@ -115,7 +115,7 @@ void CActiveMasternode::ManageStatus()
             	return;
             }
 
-            /* donations are not supported in amsterdamcoin.conf */
+            /* donations are not supported in XDE2.conf */
             CScript donationAddress = CScript();
             int donationPercentage = 0;
 
@@ -261,7 +261,7 @@ bool CActiveMasternode::Register(std::string strService, std::string strKeyMaste
         LogPrintf("CActiveMasternode::Register() - Error: %s\n", errorMessage.c_str());
         return false;
     }
-    CAmsterdamCoinAddress address;
+    CXDE2Address address;
     if (strDonationAddress != "")
     {
         if(!address.SetString(strDonationAddress))
@@ -424,7 +424,7 @@ bool CActiveMasternode::GetVinFromOutput(COutput out, CTxIn& vin, CPubKey& pubke
 
 	CTxDestination address1;
     ExtractDestination(pubScript, address1);
-    CAmsterdamCoinAddress address2(address1);
+    CXDE2Address address2(address1);
 
     CKeyID keyID;
     if (!address2.GetKeyID(keyID)) {
@@ -463,7 +463,7 @@ vector<COutput> CActiveMasternode::SelectCoinsMasternode()
 // get all possible outputs for running masternode for a specific pubkey
 vector<COutput> CActiveMasternode::SelectCoinsMasternodeForPubKey(std::string collateralAddress)
 {
-    CAmsterdamCoinAddress address(collateralAddress);
+    CXDE2Address address(collateralAddress);
     CScript scriptPubKey;
     scriptPubKey.SetDestination(address.Get());
     vector<COutput> vCoins;

@@ -114,7 +114,7 @@ public:
             obj.push_back(Pair("hex", HexStr(subscript.begin(), subscript.end())));
             Array a;
             BOOST_FOREACH(const CTxDestination& addr, addresses)
-                a.push_back(CAmsterdamCoinAddress(addr).ToString());
+                a.push_back(CXDE2Address(addr).ToString());
             obj.push_back(Pair("addresses", a));
             if (whichType == TX_MULTISIG)
                 obj.push_back(Pair("sigsrequired", nRequired));
@@ -137,7 +137,7 @@ Value validateaddress(const Array& params, bool fHelp)
             "validateaddress <XDE2address>\n"
             "Return information about <XDE2address>.");
 
-    CAmsterdamCoinAddress address(params[0].get_str());
+    CXDE2Address address(params[0].get_str());
     bool isValid = address.IsValid();
 
     Object ret;
@@ -176,7 +176,7 @@ Value validatepubkey(const Array& params, bool fHelp)
     bool isCompressed = pubKey.IsCompressed();
     CKeyID keyID = pubKey.GetID();
 
-    CAmsterdamCoinAddress address;
+    CXDE2Address address;
     address.Set(keyID);
 
     Object ret;
@@ -213,7 +213,7 @@ Value verifymessage(const Array& params, bool fHelp)
     string strSign     = params[1].get_str();
     string strMessage  = params[2].get_str();
 
-    CAmsterdamCoinAddress addr(strAddress);
+    CXDE2Address addr(strAddress);
     if (!addr.IsValid())
         throw JSONRPCError(RPC_TYPE_ERROR, "Invalid address");
 

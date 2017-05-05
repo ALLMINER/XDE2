@@ -1,5 +1,5 @@
 ---
-name: "amsterdamcoin-deps"
+name: "XDE2-deps"
 suites:
 - "trusty"
 architectures:
@@ -135,4 +135,4 @@ script: |
   #done
   #
   cd $INSTALLPREFIX
-  find include lib | sort | zip -X@ $OUTDIR/amsterdamcoin-deps-osx-gitian.zip
+  find include lib | sort | zip -X@ $OUTDIR/XDE2-deps-osx-gitian.zip

@@ -77,9 +77,9 @@ libsecp256k1_la_LIBADD = $(JNI_LIB) $(SECP_LIBS) $(COMMON_LIB)
 libsecp256k1_jni_la_SOURCES  = src/java/org_bitcoin_NativeSecp256k1.c src/java/org_bitcoin_Secp256k1Context.c
 libsecp256k1_jni_la_CPPFLAGS = -DSECP256K1_BUILD $(JNI_INCLUDES)
 
-noinst_PROGRAMS =
+noinst_PROGRXDE2 =
 if USE_BENCHMARK
-noinst_PROGRAMS += bench_verify bench_sign bench_internal
+noinst_PROGRXDE2 += bench_verify bench_sign bench_internal
 bench_verify_SOURCES = src/bench_verify.c
 bench_verify_LDADD = libsecp256k1.la $(SECP_LIBS) $(SECP_TEST_LIBS) $(COMMON_LIB)
 bench_sign_SOURCES = src/bench_sign.c
@@ -91,7 +91,7 @@ endif
 
 TESTS =
 if USE_TESTS
-noinst_PROGRAMS += tests
+noinst_PROGRXDE2 += tests
 tests_SOURCES = src/tests.c
 tests_CPPFLAGS = -DSECP256K1_BUILD -I$(top_srcdir)/src -I$(top_srcdir)/include $(SECP_INCLUDES) $(SECP_TEST_INCLUDES)
 if !ENABLE_COVERAGE
@@ -103,7 +103,7 @@ TESTS += tests
 endif
 
 if USE_EXHAUSTIVE_TESTS
-noinst_PROGRAMS += exhaustive_tests
+noinst_PROGRXDE2 += exhaustive_tests
 exhaustive_tests_SOURCES = src/tests_exhaustive.c
 exhaustive_tests_CPPFLAGS = -DSECP256K1_BUILD -I$(top_srcdir)/src $(SECP_INCLUDES)
 if !ENABLE_COVERAGE

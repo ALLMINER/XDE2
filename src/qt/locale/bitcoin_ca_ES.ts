@@ -3,22 +3,22 @@
     <name>AboutDialog</name>
     <message>
         <location filename="../forms/aboutdialog.ui" line="+14"/>
-        <source>About AmsterdamCoin</source>
-        <translation>Sobre AmsterdamCoin</translation>
+        <source>About XDE2</source>
+        <translation>Sobre XDE2</translation>
     </message>
     <message>
         <location line="+39"/>
-        <source>&lt;b&gt;AmsterdamCoin&lt;/b&gt; version</source>
-        <translation>versió &lt;b&gt;AmsterdamCoin&lt;/b&gt;</translation>
+        <source>&lt;b&gt;XDE2&lt;/b&gt; version</source>
+        <translation>versió &lt;b&gt;XDE2&lt;/b&gt;</translation>
     </message>
     <message>
         <location line="+41"/>
         <source>Copyright © 2009-2014 The Bitcoin developers
 Copyright © 2012-2014 The NovaCoin developers
-Copyright © 2017 The AmsterdamCoin developers</source>
+Copyright © 2017 The XDE2 developers</source>
         <translation>Copyright © 2009-2014 The Bitcoin developers
 Copyright © 2012-2014 The NovaCoin developers
-Copyright © 2017 The AmsterdamCoin developers</translation>
+Copyright © 2017 The XDE2 developers</translation>
     </message>
     <message>
         <location line="+15"/>
@@ -60,8 +60,8 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="-43"/>
-        <source>These are your AmsterdamCoin addresses for receiving payments. You may want to give a different one to each sender so you can keep track of who is paying you.</source>
-        <translation>Aquestes són les teves adreces de AmsterdamCoin per rebre els pagaments. És possible que vulgueu donar una diferent a cada remitent per a poder realitzar un seguiment de qui li está pagant.</translation>
+        <source>These are your XDE2 addresses for receiving payments. You may want to give a different one to each sender so you can keep track of who is paying you.</source>
+        <translation>Aquestes són les teves adreces de XDE2 per rebre els pagaments. És possible que vulgueu donar una diferent a cada remitent per a poder realitzar un seguiment de qui li está pagant.</translation>
     </message>
     <message>
         <location line="+53"/>
@@ -75,8 +75,8 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="+7"/>
-        <source>Sign a message to prove you own a AmsterdamCoin address</source>
-        <translation>Signar un missatge per demostrar que és propietari d&apos;una adreça AmsterdamCoin</translation>
+        <source>Sign a message to prove you own a XDE2 address</source>
+        <translation>Signar un missatge per demostrar que és propietari d&apos;una adreça XDE2</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -90,8 +90,8 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="-10"/>
-        <source>Verify a message to ensure it was signed with a specified AmsterdamCoin address</source>
-        <translation>Comproveu el missatge per assegurar-se que es va signar amb una adreça AmsterdamCoin especificada.</translation>
+        <source>Verify a message to ensure it was signed with a specified XDE2 address</source>
+        <translation>Comproveu el missatge per assegurar-se que es va signar amb una adreça XDE2 especificada.</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -258,8 +258,8 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="+82"/>
-        <source>AmsterdamCoin will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your coins from being stolen by malware infecting your computer.</source>
-        <translation>AmsterdamCoin tancarà ara per acabar el procés de xifrat. Recordeu que l&apos;encriptació del seu moneder no pot protegir completament les seves monedes de ser robades pel malware que pugui infectar al seu equip.</translation>
+        <source>XDE2 will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your coins from being stolen by malware infecting your computer.</source>
+        <translation>XDE2 tancarà ara per acabar el procés de xifrat. Recordeu que l&apos;encriptació del seu moneder no pot protegir completament les seves monedes de ser robades pel malware que pugui infectar al seu equip.</translation>
     </message>
     <message>
         <location line="+13"/>
@@ -352,8 +352,8 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="+4"/>
-        <source>Show information about AmsterdamCoin</source>
-        <translation>Mostra informació sobre AmsterdamCoin</translation>
+        <source>Show information about XDE2</source>
+        <translation>Mostra informació sobre XDE2</translation>
     </message>
     <message>
         <location line="+2"/>
@@ -392,13 +392,13 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="-55"/>
-        <source>Send coins to a AmsterdamCoin address</source>
-        <translation>Enviar monedes a una adreça AmsterdamCoin</translation>
+        <source>Send coins to a XDE2 address</source>
+        <translation>Enviar monedes a una adreça XDE2</translation>
     </message>
     <message>
         <location line="+39"/>
-        <source>Modify configuration options for AmsterdamCoin</source>
-        <translation>Modificar les opcions de configuració per a AmsterdamCoin</translation>
+        <source>Modify configuration options for XDE2</source>
+        <translation>Modificar les opcions de configuració per a XDE2</translation>
     </message>
     <message>
         <location line="+17"/>
@@ -448,8 +448,8 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="+193"/>
-        <source>&amp;About AmsterdamCoin</source>
-        <translation>&amp;Sobre AmsterdamCoin</translation>
+        <source>&amp;About XDE2</source>
+        <translation>&amp;Sobre XDE2</translation>
     </message>
     <message>
         <location line="+9"/>
@@ -500,13 +500,13 @@ This product includes software developed by the OpenSSL Project for use in the O
     <message>
         <location line="+0"/>
         <location line="+58"/>
-        <source>AmsterdamCoin client</source>
-        <translation>Client AmsterdamCoin</translation>
+        <source>XDE2 client</source>
+        <translation>Client XDE2</translation>
     </message>
     <message numerus="yes">
         <location line="+70"/>
-        <source>%n active connection(s) to AmsterdamCoin network</source>
-        <translation><numerusform>%n conexió activa a la xarxa AmsterdamCoin</numerusform><numerusform>%n conexions actives a la xarxa AmsterdamCoin</numerusform></translation>
+        <source>%n active connection(s) to XDE2 network</source>
+        <translation><numerusform>%n conexió activa a la xarxa XDE2</numerusform><numerusform>%n conexions actives a la xarxa XDE2</numerusform></translation>
     </message>
     <message>
         <location line="+488"/>
@@ -596,8 +596,8 @@ Address: %4
     <message>
         <location line="-15"/>
         <location line="+15"/>
-        <source>URI can not be parsed! This can be caused by an invalid AmsterdamCoin address or malformed URI parameters.</source>
-        <translation>l&apos;URI no es pot analitzar! Això pot ser causat per una adreça AmsterdamCoin no vàlida o paràmetres URI malformats.</translation>
+        <source>URI can not be parsed! This can be caused by an invalid XDE2 address or malformed URI parameters.</source>
+        <translation>l&apos;URI no es pot analitzar! Això pot ser causat per una adreça XDE2 no vàlida o paràmetres URI malformats.</translation>
     </message>
     <message>
         <location line="+9"/>
@@ -719,8 +719,8 @@ Address: %4
     </message>
     <message>
         <location filename="../bitcoin.cpp" line="+104"/>
-        <source>A fatal error occurred. AmsterdamCoin can no longer continue safely and will quit.</source>
-        <translation>S&apos;ha produït un error fatal. AmsterdamCoin ja no pot continuar de forma segura i es tancarà.</translation>
+        <source>A fatal error occurred. XDE2 can no longer continue safely and will quit.</source>
+        <translation>S&apos;ha produït un error fatal. XDE2 ja no pot continuar de forma segura i es tancarà.</translation>
     </message>
 </context>
 <context>
@@ -1053,8 +1053,8 @@ En aquest cas es requereix una comisió d&apos;almenys 2%.</translation>
     </message>
     <message>
         <location line="-5"/>
-        <source>The entered address &quot;%1&quot; is not a valid AmsterdamCoin address.</source>
-        <translation>La direcció introduïda &quot;%1&quot; no és una adreça AmsterdamCoin vàlida.</translation>
+        <source>The entered address &quot;%1&quot; is not a valid XDE2 address.</source>
+        <translation>La direcció introduïda &quot;%1&quot; no és una adreça XDE2 vàlida.</translation>
     </message>
     <message>
         <location line="+10"/>
@@ -1072,8 +1072,8 @@ En aquest cas es requereix una comisió d&apos;almenys 2%.</translation>
     <message>
         <location filename="../guiutil.cpp" line="+426"/>
         <location line="+12"/>
-        <source>AmsterdamCoin-Qt</source>
-        <translation>AmsterdamCoin-Qt</translation>
+        <source>XDE2-Qt</source>
+        <translation>XDE2-Qt</translation>
     </message>
     <message>
         <location line="-12"/>
@@ -1145,13 +1145,13 @@ En aquest cas es requereix una comisió d&apos;almenys 2%.</translation>
     </message>
     <message>
         <location line="+31"/>
-        <source>Automatically start AmsterdamCoin after logging in to the system.</source>
-        <translation>Inicia automàticament AmsterdamCoin després d&apos;entrar en el sistema.</translation>
+        <source>Automatically start XDE2 after logging in to the system.</source>
+        <translation>Inicia automàticament XDE2 després d&apos;entrar en el sistema.</translation>
     </message>
     <message>
         <location line="+3"/>
-        <source>&amp;Start AmsterdamCoin on system login</source>
-        <translation>&amp;Iniciar AmsterdamCoin amb l&apos;inici de sessió</translation>
+        <source>&amp;Start XDE2 on system login</source>
+        <translation>&amp;Iniciar XDE2 amb l&apos;inici de sessió</translation>
     </message>
     <message>
         <location line="+21"/>
@@ -1160,8 +1160,8 @@ En aquest cas es requereix una comisió d&apos;almenys 2%.</translation>
     </message>
     <message>
         <location line="+6"/>
-        <source>Automatically open the AmsterdamCoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>Obrir automàticament el port de client AmsterdamCoin en el router. Això només funciona quan el router és compatible amb UPnP i està habilitat.</translation>
+        <source>Automatically open the XDE2 client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>Obrir automàticament el port de client XDE2 en el router. Això només funciona quan el router és compatible amb UPnP i està habilitat.</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -1170,8 +1170,8 @@ En aquest cas es requereix una comisió d&apos;almenys 2%.</translation>
     </message>
     <message>
         <location line="+7"/>
-        <source>Connect to the AmsterdamCoin network through a SOCKS proxy (e.g. when connecting through Tor).</source>
-        <translation>Connecteu-vos a la xarxa AmsterdamCoin través d&apos;un proxy SOCKS (per exemple, quan es connecta a través de Tor).</translation>
+        <source>Connect to the XDE2 network through a SOCKS proxy (e.g. when connecting through Tor).</source>
+        <translation>Connecteu-vos a la xarxa XDE2 través d&apos;un proxy SOCKS (per exemple, quan es connecta a través de Tor).</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -1245,8 +1245,8 @@ En aquest cas es requereix una comisió d&apos;almenys 2%.</translation>
     </message>
     <message>
         <location line="+13"/>
-        <source>The user interface language can be set here. This setting will take effect after restarting AmsterdamCoin.</source>
-        <translation>L&apos;idioma de la interfície d&apos;usuari es pot configurar aquí. Aquesta configuració s&apos;aplicarà després de reiniciar AmsterdamCoin.</translation>
+        <source>The user interface language can be set here. This setting will take effect after restarting XDE2.</source>
+        <translation>L&apos;idioma de la interfície d&apos;usuari es pot configurar aquí. Aquesta configuració s&apos;aplicarà després de reiniciar XDE2.</translation>
     </message>
     <message>
         <location line="+11"/>
@@ -1312,8 +1312,8 @@ En aquest cas es requereix una comisió d&apos;almenys 2%.</translation>
     <message>
         <location line="-9"/>
         <location line="+9"/>
-        <source>This setting will take effect after restarting AmsterdamCoin.</source>
-        <translation>Aquesta configuració s&apos;aplicarà després de reiniciar AmsterdamCoin.</translation>
+        <source>This setting will take effect after restarting XDE2.</source>
+        <translation>Aquesta configuració s&apos;aplicarà després de reiniciar XDE2.</translation>
     </message>
     <message>
         <location line="+29"/>
@@ -1331,8 +1331,8 @@ En aquest cas es requereix una comisió d&apos;almenys 2%.</translation>
     <message>
         <location line="+46"/>
         <location line="+247"/>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the AmsterdamCoin network after a connection is established, but this process has not completed yet.</source>
-        <translation>La informació mostrada pot estar fora de data. El seu moneder es sincronitza automàticament amb la xarxa AmsterdamCoin després d&apos;establir una connexió, però aquest procés no s&apos;ha completat encara.</translation>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the XDE2 network after a connection is established, but this process has not completed yet.</source>
+        <translation>La informació mostrada pot estar fora de data. El seu moneder es sincronitza automàticament amb la xarxa XDE2 després d&apos;establir una connexió, però aquest procés no s&apos;ha completat encara.</translation>
     </message>
     <message>
         <location line="-173"/>
@@ -1405,7 +1405,7 @@ En aquest cas es requereix una comisió d&apos;almenys 2%.</translation>
     <name>PaymentServer</name>
     <message>
         <location filename="../paymentserver.cpp" line="+107"/>
-        <source>Cannot start amsterdamcoin: click-to-pay handler</source>
+        <source>Cannot start XDE2: click-to-pay handler</source>
         <translation type="unfinished"/>
     </message>
 </context>
@@ -1573,8 +1573,8 @@ En aquest cas es requereix una comisió d&apos;almenys 2%.</translation>
     </message>
     <message>
         <location line="+7"/>
-        <source>Show the AmsterdamCoin-Qt help message to get a list with possible AmsterdamCoin command-line options.</source>
-        <translation>Mostra el missatge d&apos;ajuda de AmsterdamCoin-Qt per obtenir una llista amb les possibles opcions de línia d&apos;ordres AmsterdamCoin.</translation>
+        <source>Show the XDE2-Qt help message to get a list with possible XDE2 command-line options.</source>
+        <translation>Mostra el missatge d&apos;ajuda de XDE2-Qt per obtenir una llista amb les possibles opcions de línia d&apos;ordres XDE2.</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -1593,13 +1593,13 @@ En aquest cas es requereix una comisió d&apos;almenys 2%.</translation>
     </message>
     <message>
         <location line="-104"/>
-        <source>AmsterdamCoin - Debug window</source>
-        <translation>AmsterdamCoin - Finestra Depuració</translation>
+        <source>XDE2 - Debug window</source>
+        <translation>XDE2 - Finestra Depuració</translation>
     </message>
     <message>
         <location line="+25"/>
-        <source>AmsterdamCoin Core</source>
-        <translation>Nucli AmsterdamCoin</translation>
+        <source>XDE2 Core</source>
+        <translation>Nucli XDE2</translation>
     </message>
     <message>
         <location line="+256"/>
@@ -1608,8 +1608,8 @@ En aquest cas es requereix una comisió d&apos;almenys 2%.</translation>
     </message>
     <message>
         <location line="+7"/>
-        <source>Open the AmsterdamCoin debug log file from the current data directory. This can take a few seconds for large log files.</source>
-        <translation>Obriu el fitxer de registre de depuració AmsterdamCoin des del directori de dades actual. Això pot trigar uns segons en els arxius de registre de grans dimensions.</translation>
+        <source>Open the XDE2 debug log file from the current data directory. This can take a few seconds for large log files.</source>
+        <translation>Obriu el fitxer de registre de depuració XDE2 des del directori de dades actual. Això pot trigar uns segons en els arxius de registre de grans dimensions.</translation>
     </message>
     <message>
         <location line="+102"/>
@@ -1618,8 +1618,8 @@ En aquest cas es requereix una comisió d&apos;almenys 2%.</translation>
     </message>
     <message>
         <location filename="../rpcconsole.cpp" line="+325"/>
-        <source>Welcome to the AmsterdamCoin RPC console.</source>
-        <translation>Benvingut a la consola RPC de AmsterdamCoin.</translation>
+        <source>Welcome to the XDE2 RPC console.</source>
+        <translation>Benvingut a la consola RPC de XDE2.</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -1727,8 +1727,8 @@ En aquest cas es requereix una comisió d&apos;almenys 2%.</translation>
         <location line="+86"/>
         <location line="+86"/>
         <location line="+32"/>
-        <source>0.00 AMS</source>
-        <translation>123.456 AMS {0.00 ?}</translation>
+        <source>0.00 XDE2</source>
+        <translation>123.456 XDE2 {0.00 ?}</translation>
     </message>
     <message>
         <location line="-191"/>
@@ -1797,8 +1797,8 @@ En aquest cas es requereix una comisió d&apos;almenys 2%.</translation>
     </message>
     <message>
         <location line="+16"/>
-        <source>123.456 AMS</source>
-        <translation>123.456 AMS</translation>
+        <source>123.456 XDE2</source>
+        <translation>123.456 XDE2</translation>
     </message>
     <message>
         <location line="+31"/>
@@ -1812,8 +1812,8 @@ En aquest cas es requereix una comisió d&apos;almenys 2%.</translation>
     </message>
     <message>
         <location filename="../sendcoinsdialog.cpp" line="-173"/>
-        <source>Enter a AmsterdamCoin address (e.g. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</source>
-        <translation>Introdueix una adreça AmsterdamCoin (p.ex. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</translation>
+        <source>Enter a XDE2 address (e.g. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</source>
+        <translation>Introdueix una adreça XDE2 (p.ex. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</translation>
     </message>
     <message>
         <location line="+15"/>
@@ -1912,8 +1912,8 @@ En aquest cas es requereix una comisió d&apos;almenys 2%.</translation>
     </message>
     <message>
         <location line="+247"/>
-        <source>WARNING: Invalid AmsterdamCoin address</source>
-        <translation>ADVERTÈNCIA: Direcció AmsterdamCoin invàlida</translation>
+        <source>WARNING: Invalid XDE2 address</source>
+        <translation>ADVERTÈNCIA: Direcció XDE2 invàlida</translation>
     </message>
     <message>
         <location line="+13"/>
@@ -1986,8 +1986,8 @@ En aquest cas es requereix una comisió d&apos;almenys 2%.</translation>
     </message>
     <message>
         <location filename="../sendcoinsentry.cpp" line="+1"/>
-        <source>Enter a AmsterdamCoin address (e.g. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</source>
-        <translation>Introdueix una adreça AmsterdamCoin (p.ex. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</translation>
+        <source>Enter a XDE2 address (e.g. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</source>
+        <translation>Introdueix una adreça XDE2 (p.ex. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</translation>
     </message>
 </context>
 <context>
@@ -2047,8 +2047,8 @@ En aquest cas es requereix una comisió d&apos;almenys 2%.</translation>
     </message>
     <message>
         <location line="+21"/>
-        <source>Sign the message to prove you own this AmsterdamCoin address</source>
-        <translation>Signar un missatge per demostrar que és propietari d&apos;aquesta adreça AmsterdamCoin</translation>
+        <source>Sign the message to prove you own this XDE2 address</source>
+        <translation>Signar un missatge per demostrar que és propietari d&apos;aquesta adreça XDE2</translation>
     </message>
     <message>
         <location line="+17"/>
@@ -2079,8 +2079,8 @@ En aquest cas es requereix una comisió d&apos;almenys 2%.</translation>
     </message>
     <message>
         <location line="+40"/>
-        <source>Verify the message to ensure it was signed with the specified AmsterdamCoin address</source>
-        <translation>Comproveu el missatge per assegurar-se que es va signar amb l&apos;adreça AmsterdamCoin especificada.</translation>
+        <source>Verify the message to ensure it was signed with the specified XDE2 address</source>
+        <translation>Comproveu el missatge per assegurar-se que es va signar amb l&apos;adreça XDE2 especificada.</translation>
     </message>
     <message>
         <location line="+17"/>
@@ -2090,8 +2090,8 @@ En aquest cas es requereix una comisió d&apos;almenys 2%.</translation>
     <message>
         <location filename="../signverifymessagedialog.cpp" line="+27"/>
         <location line="+3"/>
-        <source>Enter a AmsterdamCoin address (e.g. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</source>
-        <translation>Introdueix una adreça AmsterdamCoin (p.ex. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</translation>
+        <source>Enter a XDE2 address (e.g. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</source>
+        <translation>Introdueix una adreça XDE2 (p.ex. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</translation>
     </message>
     <message>
         <location line="-2"/>
@@ -2100,8 +2100,8 @@ En aquest cas es requereix una comisió d&apos;almenys 2%.</translation>
     </message>
     <message>
         <location line="+3"/>
-        <source>Enter AmsterdamCoin signature</source>
-        <translation>Introduïu la signatura AmsterdamCoin</translation>
+        <source>Enter XDE2 signature</source>
+        <translation>Introduïu la signatura XDE2</translation>
     </message>
     <message>
         <location line="+82"/>
@@ -2679,8 +2679,8 @@ En aquest cas es requereix una comisió d&apos;almenys 2%.</translation>
     <name>bitcoin-core</name>
     <message>
         <location filename="../bitcoinstrings.cpp" line="+173"/>
-        <source>AmsterdamCoin version</source>
-        <translation>versió AmsterdamCoin</translation>
+        <source>XDE2 version</source>
+        <translation>versió XDE2</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -2689,8 +2689,8 @@ En aquest cas es requereix una comisió d&apos;almenys 2%.</translation>
     </message>
     <message>
         <location line="+1"/>
-        <source>Send command to -server or amsterdamcoind</source>
-        <translation>Enviar comandes a -server o amsterdamcoind</translation>
+        <source>Send command to -server or XDE2d</source>
+        <translation>Enviar comandes a -server o XDE2d</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -2709,13 +2709,13 @@ En aquest cas es requereix una comisió d&apos;almenys 2%.</translation>
     </message>
     <message>
         <location line="+2"/>
-        <source>Specify configuration file (default: amsterdamcoin.conf)</source>
-        <translation>Especifiqueu el fitxer de configuració (per defecte: amsterdamcoin.conf)</translation>
+        <source>Specify configuration file (default: XDE2.conf)</source>
+        <translation>Especifiqueu el fitxer de configuració (per defecte: XDE2.conf)</translation>
     </message>
     <message>
         <location line="+1"/>
-        <source>Specify pid file (default: amsterdamcoind.pid)</source>
-        <translation>Especificar arxiu pid (per defecte: amsterdamcoind.pid)</translation>
+        <source>Specify pid file (default: XDE2d.pid)</source>
+        <translation>Especificar arxiu pid (per defecte: XDE2d.pid)</translation>
     </message>
     <message>
         <location line="+2"/>
@@ -2732,13 +2732,13 @@ En aquest cas es requereix una comisió d&apos;almenys 2%.</translation>
         <source>%s, you must set a rpcpassword in the configuration file:
 %s
 It is recommended you use the following random password:
-rpcuser=amsterdamcoinrpc
+rpcuser=XDE2rpc
 rpcpassword=%s
 (you do not need to remember this password)
 The username and password MUST NOT be the same.
 If the file does not exist, create it with owner-readable-only file permissions.
 It is also recommended to set alertnotify so you are notified of problems;
-for example: alertnotify=echo %%s | mail -s &quot;AmsterdamCoin Alert&quot; admin@foo.com
+for example: alertnotify=echo %%s | mail -s &quot;XDE2 Alert&quot; admin@foo.com
 </source>
         <translation type="unfinished"/>
     </message>
@@ -2844,8 +2844,8 @@ for example: alertnotify=echo %%s | mail -s &quot;AmsterdamCoin Alert&quot; admi
     </message>
     <message>
         <location line="-103"/>
-        <source>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong AmsterdamCoin will not work properly.</source>
-        <translation>Avís: Comproveu que la data i hora de l&apos;equip siguin correctes! Si el seu rellotge és erroni AmsterdamCoin no funcionarà correctament.</translation>
+        <source>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong XDE2 will not work properly.</source>
+        <translation>Avís: Comproveu que la data i hora de l&apos;equip siguin correctes! Si el seu rellotge és erroni XDE2 no funcionarà correctament.</translation>
     </message>
     <message>
         <location line="+132"/>
@@ -3152,7 +3152,7 @@ Executar una ordre quan es rep un avís rellevant (%s en cmd es substitueix per 
     </message>
     <message>
         <location line="+10"/>
-        <source>Initialization sanity check failed. AmsterdamCoin is shutting down.</source>
+        <source>Initialization sanity check failed. XDE2 is shutting down.</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -3217,13 +3217,13 @@ Executar una ordre quan es rep un avís rellevant (%s en cmd es substitueix per 
     </message>
     <message>
         <location line="+4"/>
-        <source>Error loading wallet.dat: Wallet requires newer version of AmsterdamCoin</source>
-        <translation>Error en carregar wallet.dat: El moneder requereix la versió més recent de AmsterdamCoin</translation>
+        <source>Error loading wallet.dat: Wallet requires newer version of XDE2</source>
+        <translation>Error en carregar wallet.dat: El moneder requereix la versió més recent de XDE2</translation>
     </message>
     <message>
         <location line="+1"/>
-        <source>Wallet needed to be rewritten: restart AmsterdamCoin to complete</source>
-        <translation>El moneder necessita ser reescrita: reiniciar AmsterdamCoin per completar</translation>
+        <source>Wallet needed to be rewritten: restart XDE2 to complete</source>
+        <translation>El moneder necessita ser reescrita: reiniciar XDE2 per completar</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -3287,8 +3287,8 @@ Executar una ordre quan es rep un avís rellevant (%s en cmd es substitueix per 
     </message>
     <message>
         <location line="+125"/>
-        <source>Unable to bind to %s on this computer. AmsterdamCoin is probably already running.</source>
-        <translation>No es pot enllaçar a %s en aquest equip. AmsterdamCoin probablement ja estigui en funcionament.</translation>
+        <source>Unable to bind to %s on this computer. XDE2 is probably already running.</source>
+        <translation>No es pot enllaçar a %s en aquest equip. XDE2 probablement ja estigui en funcionament.</translation>
     </message>
     <message>
         <location line="-101"/>
@@ -3327,7 +3327,7 @@ Executar una ordre quan es rep un avís rellevant (%s en cmd es substitueix per 
     </message>
     <message>
         <location line="+3"/>
-        <source>Cannot obtain a lock on data directory %s. AmsterdamCoin is probably already running.</source>
+        <source>Cannot obtain a lock on data directory %s. XDE2 is probably already running.</source>
         <translation type="unfinished"/>
     </message>
     <message>

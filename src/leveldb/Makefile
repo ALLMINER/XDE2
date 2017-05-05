@@ -53,7 +53,7 @@ TESTS = \
 	version_set_test \
 	write_batch_test
 
-PROGRAMS = db_bench leveldbutil $(TESTS)
+PROGRXDE2 = db_bench leveldbutil $(TESTS)
 BENCHMARKS = db_bench_sqlite3 db_bench_tree_db
 
 LIBRARY = libleveldb.a
@@ -90,11 +90,11 @@ endif  # PLATFORM_SHARED_EXT
 
 all: $(SHARED) $(LIBRARY)
 
-check: all $(PROGRAMS) $(TESTS)
+check: all $(PROGRXDE2) $(TESTS)
 	for t in $(TESTS); do echo "***** Running $$t"; ./$$t || exit 1; done
 
 clean:
-	-rm -f $(PROGRAMS) $(BENCHMARKS) $(LIBRARY) $(SHARED) $(MEMENVLIBRARY) */*.o */*/*.o ios-x86/*/*.o ios-arm/*/*.o build_config.mk
+	-rm -f $(PROGRXDE2) $(BENCHMARKS) $(LIBRARY) $(SHARED) $(MEMENVLIBRARY) */*.o */*/*.o ios-x86/*/*.o ios-arm/*/*.o build_config.mk
 	-rm -rf ios-x86/* ios-arm/*
 
 $(LIBRARY): $(LIBOBJECTS)

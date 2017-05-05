@@ -3,22 +3,22 @@
     <name>AboutDialog</name>
     <message>
         <location filename="../forms/aboutdialog.ui" line="+14"/>
-        <source>About AmsterdamCoin</source>
-        <translation>O AmsterdamCoine</translation>
+        <source>About XDE2</source>
+        <translation>O XDE2e</translation>
     </message>
     <message>
         <location line="+39"/>
-        <source>&lt;b&gt;AmsterdamCoin&lt;/b&gt; version</source>
-        <translation>&lt;b&gt;AmsterdamCoin&lt;/b&gt; verzia</translation>
+        <source>&lt;b&gt;XDE2&lt;/b&gt; version</source>
+        <translation>&lt;b&gt;XDE2&lt;/b&gt; verzia</translation>
     </message>
     <message>
         <location line="+41"/>
         <source>Copyright © 2009-2014 The Bitcoin developers
 Copyright © 2012-2014 The NovaCoin developers
-Copyright © 2017 The AmsterdamCoin developers</source>
+Copyright © 2017 The XDE2 developers</source>
         <translation>Copyright © 2009-2014 The Bitcoin developers
 Copyright © 2012-2014 The NovaCoin developers
-Copyright © 2017 The AmsterdamCoin developers</translation>
+Copyright © 2017 The XDE2 developers</translation>
     </message>
     <message>
         <location line="+15"/>
@@ -65,8 +65,8 @@ Tento produkt obsahuje softvér vyvinutý projektom OpenSSL Project pre použiti
     </message>
     <message>
         <location line="-43"/>
-        <source>These are your AmsterdamCoin addresses for receiving payments. You may want to give a different one to each sender so you can keep track of who is paying you.</source>
-        <translation>Toto sú vaše AmsterdamCoin adresy pre príjem platieb. Možno budete chcieť dať inú každému odosielateľovi, aby ste mohli sledovať, kto Vám platí.</translation>
+        <source>These are your XDE2 addresses for receiving payments. You may want to give a different one to each sender so you can keep track of who is paying you.</source>
+        <translation>Toto sú vaše XDE2 adresy pre príjem platieb. Možno budete chcieť dať inú každému odosielateľovi, aby ste mohli sledovať, kto Vám platí.</translation>
     </message>
     <message>
         <location line="+53"/>
@@ -80,8 +80,8 @@ Tento produkt obsahuje softvér vyvinutý projektom OpenSSL Project pre použiti
     </message>
     <message>
         <location line="+7"/>
-        <source>Sign a message to prove you own a AmsterdamCoin address</source>
-        <translation>Podpísať správu ako dôkaz, že vlastníte túto AmsterdamCoin adresu</translation>
+        <source>Sign a message to prove you own a XDE2 address</source>
+        <translation>Podpísať správu ako dôkaz, že vlastníte túto XDE2 adresu</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -95,8 +95,8 @@ Tento produkt obsahuje softvér vyvinutý projektom OpenSSL Project pre použiti
     </message>
     <message>
         <location line="-10"/>
-        <source>Verify a message to ensure it was signed with a specified AmsterdamCoin address</source>
-        <translation>Overte správu, aby ste zabezpečili, že bola podpísaná s určitou AmsterdamCoin adresou</translation>
+        <source>Verify a message to ensure it was signed with a specified XDE2 address</source>
+        <translation>Overte správu, aby ste zabezpečili, že bola podpísaná s určitou XDE2 adresou</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -263,8 +263,8 @@ Tento produkt obsahuje softvér vyvinutý projektom OpenSSL Project pre použiti
     </message>
     <message>
         <location line="+82"/>
-        <source>AmsterdamCoin will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your coins from being stolen by malware infecting your computer.</source>
-        <translation>AmsterdamCoin sa teraz zavrie aby dokončil proces zašifrovania. Nezabudnite, že zašifrovanie vašej peňaženky nemôže plne chrániť vaše mince pred krádežou malwarom, ktorý napadol váš počítač.</translation>
+        <source>XDE2 will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your coins from being stolen by malware infecting your computer.</source>
+        <translation>XDE2 sa teraz zavrie aby dokončil proces zašifrovania. Nezabudnite, že zašifrovanie vašej peňaženky nemôže plne chrániť vaše mince pred krádežou malwarom, ktorý napadol váš počítač.</translation>
     </message>
     <message>
         <location line="+13"/>
@@ -357,8 +357,8 @@ Tento produkt obsahuje softvér vyvinutý projektom OpenSSL Project pre použiti
     </message>
     <message>
         <location line="+4"/>
-        <source>Show information about AmsterdamCoin</source>
-        <translation>Zobraziť informácie o AmsterdamCoin</translation>
+        <source>Show information about XDE2</source>
+        <translation>Zobraziť informácie o XDE2</translation>
     </message>
     <message>
         <location line="+2"/>
@@ -397,13 +397,13 @@ Tento produkt obsahuje softvér vyvinutý projektom OpenSSL Project pre použiti
     </message>
     <message>
         <location line="-55"/>
-        <source>Send coins to a AmsterdamCoin address</source>
-        <translation>Poslať mince na AmsterdamCoin adresu</translation>
+        <source>Send coins to a XDE2 address</source>
+        <translation>Poslať mince na XDE2 adresu</translation>
     </message>
     <message>
         <location line="+39"/>
-        <source>Modify configuration options for AmsterdamCoin</source>
-        <translation>Upraviť možnosti konfigurácie pre AmsterdamCoin</translation>
+        <source>Modify configuration options for XDE2</source>
+        <translation>Upraviť možnosti konfigurácie pre XDE2</translation>
     </message>
     <message>
         <location line="+17"/>
@@ -453,8 +453,8 @@ Tento produkt obsahuje softvér vyvinutý projektom OpenSSL Project pre použiti
     </message>
     <message>
         <location line="+193"/>
-        <source>&amp;About AmsterdamCoin</source>
-        <translation>&amp;O AmsterdamCoin</translation>
+        <source>&amp;About XDE2</source>
+        <translation>&amp;O XDE2</translation>
     </message>
     <message>
         <location line="+9"/>
@@ -505,13 +505,13 @@ Tento produkt obsahuje softvér vyvinutý projektom OpenSSL Project pre použiti
     <message>
         <location line="+0"/>
         <location line="+58"/>
-        <source>AmsterdamCoin client</source>
-        <translation>AmsterdamCoin klient</translation>
+        <source>XDE2 client</source>
+        <translation>XDE2 klient</translation>
     </message>
     <message numerus="yes">
         <location line="+70"/>
-        <source>%n active connection(s) to AmsterdamCoin network</source>
-        <translation><numerusform>%n aktívne spojenie s AmsterdamCoin sieťov</numerusform><numerusform>%n aktívnych spojení s AmsterdamCoin sieťov</numerusform><numerusform>%n aktívnych spojení s AmsterdamCoin sieťou</numerusform></translation>
+        <source>%n active connection(s) to XDE2 network</source>
+        <translation><numerusform>%n aktívne spojenie s XDE2 sieťov</numerusform><numerusform>%n aktívnych spojení s XDE2 sieťov</numerusform><numerusform>%n aktívnych spojení s XDE2 sieťou</numerusform></translation>
     </message>
     <message>
         <location line="+488"/>
@@ -604,8 +604,8 @@ Adresa: %4</translation>
     <message>
         <location line="-15"/>
         <location line="+15"/>
-        <source>URI can not be parsed! This can be caused by an invalid AmsterdamCoin address or malformed URI parameters.</source>
-        <translation>URI nemožno analyzovať! Toto môže byť spôsobené neplatnou AmsterdamCoin adresu alebo chybnými URI parametrami.</translation>
+        <source>URI can not be parsed! This can be caused by an invalid XDE2 address or malformed URI parameters.</source>
+        <translation>URI nemožno analyzovať! Toto môže byť spôsobené neplatnou XDE2 adresu alebo chybnými URI parametrami.</translation>
     </message>
     <message>
         <location line="+9"/>
@@ -727,8 +727,8 @@ Adresa: %4</translation>
     </message>
     <message>
         <location filename="../bitcoin.cpp" line="+104"/>
-        <source>A fatal error occurred. AmsterdamCoin can no longer continue safely and will quit.</source>
-        <translation>Došlo k závažnej chybe. AmsterdamCoin už nemôže pokračovať bezpečne a bude ukončený.</translation>
+        <source>A fatal error occurred. XDE2 can no longer continue safely and will quit.</source>
+        <translation>Došlo k závažnej chybe. XDE2 už nemôže pokračovať bezpečne a bude ukončený.</translation>
     </message>
 </context>
 <context>
@@ -1061,8 +1061,8 @@ To znamená, že je potrebný poplatok aspoň %2.</translation>
     </message>
     <message>
         <location line="-5"/>
-        <source>The entered address &quot;%1&quot; is not a valid AmsterdamCoin address.</source>
-        <translation>Zadaná adresa &quot;%1&quot; nie je platnou AmsterdamCoin adresou.</translation>
+        <source>The entered address &quot;%1&quot; is not a valid XDE2 address.</source>
+        <translation>Zadaná adresa &quot;%1&quot; nie je platnou XDE2 adresou.</translation>
     </message>
     <message>
         <location line="+10"/>
@@ -1080,8 +1080,8 @@ To znamená, že je potrebný poplatok aspoň %2.</translation>
     <message>
         <location filename="../guiutil.cpp" line="+426"/>
         <location line="+12"/>
-        <source>AmsterdamCoin-Qt</source>
-        <translation>AmsterdamCoin-Qt</translation>
+        <source>XDE2-Qt</source>
+        <translation>XDE2-Qt</translation>
     </message>
     <message>
         <location line="-12"/>
@@ -1153,13 +1153,13 @@ To znamená, že je potrebný poplatok aspoň %2.</translation>
     </message>
     <message>
         <location line="+31"/>
-        <source>Automatically start AmsterdamCoin after logging in to the system.</source>
-        <translation>Automaticky spustiť AmsterdamCoin po prihlásení sa do systému.</translation>
+        <source>Automatically start XDE2 after logging in to the system.</source>
+        <translation>Automaticky spustiť XDE2 po prihlásení sa do systému.</translation>
     </message>
     <message>
         <location line="+3"/>
-        <source>&amp;Start AmsterdamCoin on system login</source>
-        <translation>&amp;Spustiť AmsterdamCoin pri prihlásení do systému</translation>
+        <source>&amp;Start XDE2 on system login</source>
+        <translation>&amp;Spustiť XDE2 pri prihlásení do systému</translation>
     </message>
     <message>
         <location line="+21"/>
@@ -1168,8 +1168,8 @@ To znamená, že je potrebný poplatok aspoň %2.</translation>
     </message>
     <message>
         <location line="+6"/>
-        <source>Automatically open the AmsterdamCoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>Automaticky otvoriť port klienta AmsterdamCoin na routeri. To funguje iba vtedy, ak váš router podporuje UPnP a je povolené.</translation>
+        <source>Automatically open the XDE2 client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>Automaticky otvoriť port klienta XDE2 na routeri. To funguje iba vtedy, ak váš router podporuje UPnP a je povolené.</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -1178,8 +1178,8 @@ To znamená, že je potrebný poplatok aspoň %2.</translation>
     </message>
     <message>
         <location line="+7"/>
-        <source>Connect to the AmsterdamCoin network through a SOCKS proxy (e.g. when connecting through Tor).</source>
-        <translation>Pripojenie k sieti AmsterdamCoin cez SOCKS proxy server (napr. pri pripojení cez Tor).</translation>
+        <source>Connect to the XDE2 network through a SOCKS proxy (e.g. when connecting through Tor).</source>
+        <translation>Pripojenie k sieti XDE2 cez SOCKS proxy server (napr. pri pripojení cez Tor).</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -1253,8 +1253,8 @@ To znamená, že je potrebný poplatok aspoň %2.</translation>
     </message>
     <message>
         <location line="+13"/>
-        <source>The user interface language can be set here. This setting will take effect after restarting AmsterdamCoin.</source>
-        <translation>Tu môžete nastaviť jazyk používateľského rozhrania. Toto nastavenie sa prejaví až po reštartovaní AmsterdamCoin.</translation>
+        <source>The user interface language can be set here. This setting will take effect after restarting XDE2.</source>
+        <translation>Tu môžete nastaviť jazyk používateľského rozhrania. Toto nastavenie sa prejaví až po reštartovaní XDE2.</translation>
     </message>
     <message>
         <location line="+11"/>
@@ -1320,8 +1320,8 @@ To znamená, že je potrebný poplatok aspoň %2.</translation>
     <message>
         <location line="-9"/>
         <location line="+9"/>
-        <source>This setting will take effect after restarting AmsterdamCoin.</source>
-        <translation>Toto nastavenie sa prejaví až po reštartovaní AmsterdamCoin.</translation>
+        <source>This setting will take effect after restarting XDE2.</source>
+        <translation>Toto nastavenie sa prejaví až po reštartovaní XDE2.</translation>
     </message>
     <message>
         <location line="+29"/>
@@ -1339,8 +1339,8 @@ To znamená, že je potrebný poplatok aspoň %2.</translation>
     <message>
         <location line="+46"/>
         <location line="+247"/>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the AmsterdamCoin network after a connection is established, but this process has not completed yet.</source>
-        <translation>Zobrazené informácie môžu byť zastaralé. Vaša peňaženka sa automaticky synchronizuje so sieťou AmsterdamCoin po nadviazaní spojenia, ale tento proces nie je ešte dokončený.</translation>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the XDE2 network after a connection is established, but this process has not completed yet.</source>
+        <translation>Zobrazené informácie môžu byť zastaralé. Vaša peňaženka sa automaticky synchronizuje so sieťou XDE2 po nadviazaní spojenia, ale tento proces nie je ešte dokončený.</translation>
     </message>
     <message>
         <location line="-173"/>
@@ -1414,7 +1414,7 @@ To znamená, že je potrebný poplatok aspoň %2.</translation>
     <message>
         <location filename="../paymentserver.cpp" line="+107"/>
         <source>Cannot start XDE2: click-to-pay handler</source>
-        <translation>AmsterdamCoin sa nedá spustiť: click-to-pay handler</translation>
+        <translation>XDE2 sa nedá spustiť: click-to-pay handler</translation>
     </message>
 </context>
 <context>
@@ -1581,8 +1581,8 @@ To znamená, že je potrebný poplatok aspoň %2.</translation>
     </message>
     <message>
         <location line="+7"/>
-        <source>Show the AmsterdamCoin-Qt help message to get a list with possible AmsterdamCoin command-line options.</source>
-        <translation>Zobraziť AmsterdamCoin-Qt nápovedu k získaniu zoznamu pre možnosti  príkazového riadku AmsterdamCoin.</translation>
+        <source>Show the XDE2-Qt help message to get a list with possible XDE2 command-line options.</source>
+        <translation>Zobraziť XDE2-Qt nápovedu k získaniu zoznamu pre možnosti  príkazového riadku XDE2.</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -1601,13 +1601,13 @@ To znamená, že je potrebný poplatok aspoň %2.</translation>
     </message>
     <message>
         <location line="-104"/>
-        <source>AmsterdamCoin - Debug window</source>
-        <translation>AmsterdamCoin - Ladiace okno</translation>
+        <source>XDE2 - Debug window</source>
+        <translation>XDE2 - Ladiace okno</translation>
     </message>
     <message>
         <location line="+25"/>
-        <source>AmsterdamCoin Core</source>
-        <translation>Jadro AmsterdamCoin</translation>
+        <source>XDE2 Core</source>
+        <translation>Jadro XDE2</translation>
     </message>
     <message>
         <location line="+256"/>
@@ -1616,8 +1616,8 @@ To znamená, že je potrebný poplatok aspoň %2.</translation>
     </message>
     <message>
         <location line="+7"/>
-        <source>Open the AmsterdamCoin debug log file from the current data directory. This can take a few seconds for large log files.</source>
-        <translation>Otvorte AmsterdamCoin súbor denníku ladenia z aktuálneho adresára dát. To môže trvať niekoľko sekúnd pre veľké súbory denníka.</translation>
+        <source>Open the XDE2 debug log file from the current data directory. This can take a few seconds for large log files.</source>
+        <translation>Otvorte XDE2 súbor denníku ladenia z aktuálneho adresára dát. To môže trvať niekoľko sekúnd pre veľké súbory denníka.</translation>
     </message>
     <message>
         <location line="+102"/>
@@ -1626,8 +1626,8 @@ To znamená, že je potrebný poplatok aspoň %2.</translation>
     </message>
     <message>
         <location filename="../rpcconsole.cpp" line="+325"/>
-        <source>Welcome to the AmsterdamCoin RPC console.</source>
-        <translation>Vitajte v konzole AmsterdamCoin RPC.</translation>
+        <source>Welcome to the XDE2 RPC console.</source>
+        <translation>Vitajte v konzole XDE2 RPC.</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -1735,8 +1735,8 @@ To znamená, že je potrebný poplatok aspoň %2.</translation>
         <location line="+86"/>
         <location line="+86"/>
         <location line="+32"/>
-        <source>0.00 AMS</source>
-        <translation>123.456 AMS {0.00 ?}</translation>
+        <source>0.00 XDE2</source>
+        <translation>123.456 XDE2 {0.00 ?}</translation>
     </message>
     <message>
         <location line="-191"/>
@@ -1805,8 +1805,8 @@ To znamená, že je potrebný poplatok aspoň %2.</translation>
     </message>
     <message>
         <location line="+16"/>
-        <source>123.456 AMS</source>
-        <translation>123.456 AMS</translation>
+        <source>123.456 XDE2</source>
+        <translation>123.456 XDE2</translation>
     </message>
     <message>
         <location line="+31"/>
@@ -1820,8 +1820,8 @@ To znamená, že je potrebný poplatok aspoň %2.</translation>
     </message>
     <message>
         <location filename="../sendcoinsdialog.cpp" line="-173"/>
-        <source>Enter a AmsterdamCoin address (e.g. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</source>
-        <translation>Zadajte AmsterdamCoin adresu (napr. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</translation>
+        <source>Enter a XDE2 address (e.g. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</source>
+        <translation>Zadajte XDE2 adresu (napr. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</translation>
     </message>
     <message>
         <location line="+15"/>
@@ -1920,8 +1920,8 @@ To znamená, že je potrebný poplatok aspoň %2.</translation>
     </message>
     <message>
         <location line="+247"/>
-        <source>WARNING: Invalid AmsterdamCoin address</source>
-        <translation>UPOZORNENIE: Neplatná AmsterdamCoin adresa</translation>
+        <source>WARNING: Invalid XDE2 address</source>
+        <translation>UPOZORNENIE: Neplatná XDE2 adresa</translation>
     </message>
     <message>
         <location line="+13"/>
@@ -1994,8 +1994,8 @@ To znamená, že je potrebný poplatok aspoň %2.</translation>
     </message>
     <message>
         <location filename="../sendcoinsentry.cpp" line="+1"/>
-        <source>Enter a AmsterdamCoin address (e.g. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</source>
-        <translation>Zadajte AmsterdamCoin adresu (napr. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</translation>
+        <source>Enter a XDE2 address (e.g. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</source>
+        <translation>Zadajte XDE2 adresu (napr. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</translation>
     </message>
 </context>
 <context>
@@ -2055,8 +2055,8 @@ To znamená, že je potrebný poplatok aspoň %2.</translation>
     </message>
     <message>
         <location line="+21"/>
-        <source>Sign the message to prove you own this AmsterdamCoin address</source>
-        <translation>Podpísať správu ako dôkaz, že vlastníte túto AmsterdamCoin adresu</translation>
+        <source>Sign the message to prove you own this XDE2 address</source>
+        <translation>Podpísať správu ako dôkaz, že vlastníte túto XDE2 adresu</translation>
     </message>
     <message>
         <location line="+17"/>
@@ -2087,8 +2087,8 @@ To znamená, že je potrebný poplatok aspoň %2.</translation>
     </message>
     <message>
         <location line="+40"/>
-        <source>Verify the message to ensure it was signed with the specified AmsterdamCoin address</source>
-        <translation>Overte správu, aby ste sa ubezpečili, že bola podpísaná s danou AmsterdamCoin adresou</translation>
+        <source>Verify the message to ensure it was signed with the specified XDE2 address</source>
+        <translation>Overte správu, aby ste sa ubezpečili, že bola podpísaná s danou XDE2 adresou</translation>
     </message>
     <message>
         <location line="+17"/>
@@ -2098,8 +2098,8 @@ To znamená, že je potrebný poplatok aspoň %2.</translation>
     <message>
         <location filename="../signverifymessagedialog.cpp" line="+27"/>
         <location line="+3"/>
-        <source>Enter a AmsterdamCoin address (e.g. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</source>
-        <translation>Zadajte AmsterdamCoin adresu (napr. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</translation>
+        <source>Enter a XDE2 address (e.g. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</source>
+        <translation>Zadajte XDE2 adresu (napr. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</translation>
     </message>
     <message>
         <location line="-2"/>
@@ -2108,8 +2108,8 @@ To znamená, že je potrebný poplatok aspoň %2.</translation>
     </message>
     <message>
         <location line="+3"/>
-        <source>Enter AmsterdamCoin signature</source>
-        <translation>Zadajte AmsterdamCoin podpis</translation>
+        <source>Enter XDE2 signature</source>
+        <translation>Zadajte XDE2 podpis</translation>
     </message>
     <message>
         <location line="+82"/>
@@ -2687,8 +2687,8 @@ To znamená, že je potrebný poplatok aspoň %2.</translation>
     <name>bitcoin-core</name>
     <message>
         <location filename="../bitcoinstrings.cpp" line="+173"/>
-        <source>AmsterdamCoin version</source>
-        <translation>AmsterdamCoin verzia</translation>
+        <source>XDE2 version</source>
+        <translation>XDE2 verzia</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -2746,7 +2746,7 @@ rpcpassword=%s
 The username and password MUST NOT be the same.
 If the file does not exist, create it with owner-readable-only file permissions.
 It is also recommended to set alertnotify so you are notified of problems;
-for example: alertnotify=echo %%s | mail -s &quot;AmsterdamCoin Alert&quot; admin@foo.com
+for example: alertnotify=echo %%s | mail -s &quot;XDE2 Alert&quot; admin@foo.com
 </source>
         <translation>%s, musíte nastaviť rpcpassword v konfiguračnom súbore:
 %s
@@ -2757,7 +2757,7 @@ rpcpassword=%s
 Užívateľské meno a heslo NESMIE byť rovnaké.
 Ak súbor neexistuje, vytvorte ho s právami &quot;môže čítať iba vlastník&quot;.
 Odporúča sa tiež nastaviť &quot;alertnotify&quot;, takže budete upozornení na problémy,
-napríklad: alertnotify=echo %%s | mail -s &quot;AmsterdamCoin upozornenie&quot; admin@foo.com
+napríklad: alertnotify=echo %%s | mail -s &quot;XDE2 upozornenie&quot; admin@foo.com
 </translation>
     </message>
     <message>
@@ -2862,8 +2862,8 @@ napríklad: alertnotify=echo %%s | mail -s &quot;AmsterdamCoin upozornenie&quot;
     </message>
     <message>
         <location line="-103"/>
-        <source>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong AmsterdamCoin will not work properly.</source>
-        <translation>Upozornenie: Skontrolujte, že dátum a čas počítača sú správne! Ak je Váš čas nesprávny AmsterdamCoin nebude pracovať správne.</translation>
+        <source>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong XDE2 will not work properly.</source>
+        <translation>Upozornenie: Skontrolujte, že dátum a čas počítača sú správne! Ak je Váš čas nesprávny XDE2 nebude pracovať správne.</translation>
     </message>
     <message>
         <location line="+132"/>
@@ -3169,8 +3169,8 @@ napríklad: alertnotify=echo %%s | mail -s &quot;AmsterdamCoin upozornenie&quot;
     </message>
     <message>
         <location line="+10"/>
-        <source>Initialization sanity check failed. AmsterdamCoin is shutting down.</source>
-        <translation>Úvodné kontrolné testy zlyhali. AmsterdamCoin sa teraz zatvori.</translation>
+        <source>Initialization sanity check failed. XDE2 is shutting down.</source>
+        <translation>Úvodné kontrolné testy zlyhali. XDE2 sa teraz zatvori.</translation>
     </message>
     <message>
         <location line="+50"/>
@@ -3234,13 +3234,13 @@ napríklad: alertnotify=echo %%s | mail -s &quot;AmsterdamCoin upozornenie&quot;
     </message>
     <message>
         <location line="+4"/>
-        <source>Error loading wallet.dat: Wallet requires newer version of AmsterdamCoin</source>
-        <translation>Chyba pri načítaní wallet.dat: Peňaženka vyžaduje novšiu verziu AmsterdamCoin</translation>
+        <source>Error loading wallet.dat: Wallet requires newer version of XDE2</source>
+        <translation>Chyba pri načítaní wallet.dat: Peňaženka vyžaduje novšiu verziu XDE2</translation>
     </message>
     <message>
         <location line="+1"/>
-        <source>Wallet needed to be rewritten: restart AmsterdamCoin to complete</source>
-        <translation>Peňaženka potrebuje byť prepísaná: reštartujte AmsterdamCoin k dokončeniu</translation>
+        <source>Wallet needed to be rewritten: restart XDE2 to complete</source>
+        <translation>Peňaženka potrebuje byť prepísaná: reštartujte XDE2 k dokončeniu</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -3304,8 +3304,8 @@ napríklad: alertnotify=echo %%s | mail -s &quot;AmsterdamCoin upozornenie&quot;
     </message>
     <message>
         <location line="+125"/>
-        <source>Unable to bind to %s on this computer. AmsterdamCoin is probably already running.</source>
-        <translation>Nemôžem sa pripojiť na %s na tomto počítači. AmsterdamCoin je pravdepodobne už beží.</translation>
+        <source>Unable to bind to %s on this computer. XDE2 is probably already running.</source>
+        <translation>Nemôžem sa pripojiť na %s na tomto počítači. XDE2 je pravdepodobne už beží.</translation>
     </message>
     <message>
         <location line="-101"/>
@@ -3344,8 +3344,8 @@ napríklad: alertnotify=echo %%s | mail -s &quot;AmsterdamCoin upozornenie&quot;
     </message>
     <message>
         <location line="+3"/>
-        <source>Cannot obtain a lock on data directory %s. AmsterdamCoin is probably already running.</source>
-        <translation>Nedá sa zamknúť dátová zložka %s. AmsterdamCoin je pravdepodobne už spustený</translation>
+        <source>Cannot obtain a lock on data directory %s. XDE2 is probably already running.</source>
+        <translation>Nedá sa zamknúť dátová zložka %s. XDE2 je pravdepodobne už spustený</translation>
     </message>
     <message>
         <location line="+4"/>

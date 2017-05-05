@@ -43,7 +43,7 @@ SendCoinsDialog::SendCoinsDialog(QWidget *parent) :
 
 #if QT_VERSION >= 0x040700
     /* Do not move this to the XML file, Qt before 4.7 will choke on it */
-    ui->lineEditCoinControlChange->setPlaceholderText(tr("Enter a AmsterdamCoin address (e.g. afdVPH9xuGgnpWkuy1JLeF9XhqrjJmq1W6)"));
+    ui->lineEditCoinControlChange->setPlaceholderText(tr("Enter a XDE2 address (e.g. afdVPH9xuGgnpWkuy1JLeF9XhqrjJmq1W6)"));
 #endif
 
     addEntry();
@@ -537,7 +537,7 @@ bool SendCoinsDialog::handleURI(const QString &uri)
     // URI has to be valid
     if (GUIUtil::parseBitcoinURI(uri, &rv))
     {
-        CAmsterdamCoinAddress address(rv.address.toStdString());
+        CXDE2Address address(rv.address.toStdString());
         if (!address.IsValid())
             return false;
         pasteEntry(rv);
@@ -622,7 +622,7 @@ void SendCoinsDialog::processSendCoinsReturn(const WalletModel::SendCoinsReturn 
         msgParams.second = CClientUIInterface::MSG_ERROR;
         break;
     case WalletModel::IXTransactionCreationFailed:
-        msgParams.first = tr("InstantX doesn't support sending values that high yet. Transactions are currently limited to 500 AMS.");
+        msgParams.first = tr("InstantX doesn't support sending values that high yet. Transactions are currently limited to 500 XDE2.");
         msgParams.second = CClientUIInterface::MSG_ERROR;
         break;
     case WalletModel::TransactionCommitFailed:
@@ -847,7 +847,7 @@ void SendCoinsDialog::coinControlChangeEdited(const QString& text)
         CoinControlDialog::coinControl->destChange = CNoDestination();
         ui->labelCoinControlChangeLabel->setStyleSheet("QLabel{color:red;}");
 
-        CAmsterdamCoinAddress addr = CAmsterdamCoinAddress(text.toStdString());
+        CXDE2Address addr = CXDE2Address(text.toStdString());
 
         if (text.isEmpty()) // Nothing entered
         {
@@ -855,7 +855,7 @@ void SendCoinsDialog::coinControlChangeEdited(const QString& text)
         }
         else if (!addr.IsValid()) // Invalid address
         {
-            ui->labelCoinControlChangeLabel->setText(tr("Warning: Invalid AmsterdamCoin address"));
+            ui->labelCoinControlChangeLabel->setText(tr("Warning: Invalid XDE2 address"));
         }
         else // Valid address
         {

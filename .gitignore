@@ -3,9 +3,9 @@ build
 /Makefile.Release
 /Makefile.Debug
 /Makefile
-object_script.amsterdamcoin-qt.Debug
-object_script.amsterdamcoin-qt.Release
-amsterdamcoin.pro.user
-amsterdamcoin-qt_plugin_import.cpp
+object_script.XDE2-qt.Debug
+object_script.XDE2-qt.Release
+XDE2.pro.user
+XDE2-qt_plugin_import.cpp
 src/qt/locale/*.qm
 release

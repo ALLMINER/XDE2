@@ -407,7 +407,7 @@ void CDarksendPool::SetNull(){
 }
 
 bool CDarksendPool::SetCollateralAddress(std::string strAddress){
-    CAmsterdamCoinAddress address;
+    CXDE2Address address;
     if (!address.SetString(strAddress))
     {
         LogPrintf("CDarksendPool::SetCollateralAddress - Invalid DarkSend collateral address\n");
@@ -787,9 +787,9 @@ void CDarksendPool::ChargeRandomFees(){
 
                 Being that DarkSend has "no fees" we need to have some kind of cost associated
                 with using it to stop abuse. Otherwise it could serve as an attack vector and
-                allow endless transaction that would bloat AmsterdamCoin and make it unusable. To
+                allow endless transaction that would bloat XDE2 and make it unusable. To
                 stop these kinds of attacks 1 in 50 successful transactions are charged. This
-                adds up to a cost of 0.002AMS per transaction on average.
+                adds up to a cost of 0.002XDE2 per transaction on average.
             */
             if(r <= 10)
             {
@@ -1930,10 +1930,10 @@ bool CDarksendPool::IsCompatibleWithSession(int64_t nDenom, CTransaction txColla
 void CDarksendPool::GetDenominationsToString(int nDenom, std::string& strDenom){
     // Function returns as follows:
     //
-    // bit 0 - 100AMS+1 ( bit on if present )
-    // bit 1 - 10AMS+1
-    // bit 2 - 1AMS+1
-    // bit 3 - .1TAMS+1
+    // bit 0 - 100XDE2+1 ( bit on if present )
+    // bit 1 - 10XDE2+1
+    // bit 2 - 1XDE2+1
+    // bit 3 - .1TXDE2+1
     // bit 3 - non-denom
 
 
@@ -2006,10 +2006,10 @@ int CDarksendPool::GetDenominations(const std::vector<CTxOut>& vout, bool fSingl
 
     // Function returns as follows:
     //
-    // bit 0 - 100AMS+1 ( bit on if present )
-    // bit 1 - 10AMS+1
-    // bit 2 - 1AMS+1
-    // bit 3 - .1AMS+1
+    // bit 0 - 100XDE2+1 ( bit on if present )
+    // bit 1 - 10XDE2+1
+    // bit 2 - 1XDE2+1
+    // bit 3 - .1XDE2+1
 
     return denom;
 }
@@ -2110,7 +2110,7 @@ bool CDarkSendSigner::IsVinAssociatedWithPubkey(CTxIn& vin, CPubKey& pubkey){
 }
 
 bool CDarkSendSigner::SetKey(std::string strSecret, std::string& errorMessage, CKey& key, CPubKey& pubkey){
-    CAmsterdamCoinSecret vchSecret;
+    CXDE2Secret vchSecret;
     bool fGood = vchSecret.SetString(strSecret);
 
     if (!fGood) {
@@ -2263,7 +2263,7 @@ void ThreadCheckDarkSendPool()
     if(fLiteMode) return; //disable all Darksend/Masternode related functionality
 
     // Make this thread recognisable as the wallet flushing thread
-    RenameThread("amsterdamcoin-darksend");
+    RenameThread("XDE2-darksend");
 
     unsigned int c = 0;
 

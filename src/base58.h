@@ -92,23 +92,23 @@ public:
     bool operator> (const CBase58Data& b58) const { return CompareTo(b58) >  0; }
 };
 
-/** base58-encoded AmsterdamCoin addresses.
+/** base58-encoded XDE2 addresses.
  * Public-key-hash-addresses have version 0 (or 111 testnet).
  * The data vector contains RIPEMD160(SHA256(pubkey)), where pubkey is the serialized public key.
  * Script-hash-addresses have version 5 (or 196 testnet).
  * The data vector contains RIPEMD160(SHA256(cscript)), where cscript is the serialized redemption script.
  */
-class CAmsterdamCoinAddress : public CBase58Data {
+class CXDE2Address : public CBase58Data {
 public:
     bool Set(const CKeyID &id);
     bool Set(const CScriptID &id);
     bool Set(const CTxDestination &dest);
     bool IsValid() const;
 
-    CAmsterdamCoinAddress() {}
-    CAmsterdamCoinAddress(const CTxDestination &dest) { Set(dest); }
-    CAmsterdamCoinAddress(const std::string& strAddress) { SetString(strAddress); }
-    CAmsterdamCoinAddress(const char* pszAddress) { SetString(pszAddress); }
+    CXDE2Address() {}
+    CXDE2Address(const CTxDestination &dest) { Set(dest); }
+    CXDE2Address(const std::string& strAddress) { SetString(strAddress); }
+    CXDE2Address(const char* pszAddress) { SetString(pszAddress); }
 
     CTxDestination Get() const;
     bool GetKeyID(CKeyID &keyID) const;
@@ -118,7 +118,7 @@ public:
 /**
  * A base58-encoded secret key
  */
-class CAmsterdamCoinSecret : public CBase58Data
+class CXDE2Secret : public CBase58Data
 {
 public:
     void SetKey(const CKey& vchSecret);
@@ -127,11 +127,11 @@ public:
     bool SetString(const char* pszSecret);
     bool SetString(const std::string& strSecret);
 
-    CAmsterdamCoinSecret(const CKey& vchSecret) { SetKey(vchSecret); }
-    CAmsterdamCoinSecret() {}
+    CXDE2Secret(const CKey& vchSecret) { SetKey(vchSecret); }
+    CXDE2Secret() {}
 };
 
-template<typename K, int Size, CChainParams::Base58Type Type> class CAmsterdamCoinExtKeyBase : public CBase58Data
+template<typename K, int Size, CChainParams::Base58Type Type> class CXDE2ExtKeyBase : public CBase58Data
 {
 public:
     void SetKey(const K &key) {
@@ -146,15 +146,15 @@ public:
         return ret;
     }
 
-    CAmsterdamCoinExtKeyBase(const K &key) {
+    CXDE2ExtKeyBase(const K &key) {
         SetKey(key);
     }
 
-    CAmsterdamCoinExtKeyBase() {}
+    CXDE2ExtKeyBase() {}
 };
 
-typedef CAmsterdamCoinExtKeyBase<CExtKey, 74, CChainParams::EXT_SECRET_KEY> CAmsterdamCoinExtKey;
-typedef CAmsterdamCoinExtKeyBase<CExtPubKey, 74, CChainParams::EXT_PUBLIC_KEY> CAmsterdamCoinExtPubKey;
+typedef CXDE2ExtKeyBase<CExtKey, 74, CChainParams::EXT_SECRET_KEY> CXDE2ExtKey;
+typedef CXDE2ExtKeyBase<CExtPubKey, 74, CChainParams::EXT_PUBLIC_KEY> CXDE2ExtPubKey;
 
 /** base58-encoded Bitcoin addresses.
  * Public-key-hash-addresses have version 0 (or 111 testnet).

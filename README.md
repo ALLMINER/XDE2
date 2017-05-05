@@ -1,7 +1,7 @@
 
-AmsterdamCoin is a PoS-based cryptocurrency.
+XDE2 is a PoS-based cryptocurrency.
 
-AmsterdamCoin uses libsecp256k1,
+XDE2 uses libsecp256k1,
 			  libgmp,
 			  Boost1.55,
 			  OR Boost1.57,  
@@ -19,17 +19,17 @@ RPC Port: 61511
 
 BUILD LINUX
 -----------
-1) git clone https://github.com/CoinProjects/amsterdamcoin.git amsterdamcoin
+1) git clone https://github.com/CoinProjects/XDE2.git XDE2
 
-2) cd amsterdamcoin/src
+2) cd XDE2/src
 
-3) sudo make -f makefile.unix            # Headless amsterdamcoin
+3) sudo make -f makefile.unix            # Headless XDE2
 
 (optional)
 
-4) strip amsterdamcoind
+4) strip XDE2d
 
-5) sudo cp amsterdamcoind /usr/local/bin
+5) sudo cp XDE2d /usr/local/bin
 
 
 
@@ -37,11 +37,11 @@ BUILD LINUX
 BUILD WINDOWS
 -------------
 
-1) Download Qt.zip from https://github.com/CoinProjects/AmsterdamCoin/releases/tag/1.2.3B and unpack to C:/
+1) Download Qt.zip from https://github.com/CoinProjects/XDE2/releases/tag/1.2.3B and unpack to C:/
 
-2) Download AmsterdamCoin source from https://github.com/CoinProjects/AmsterdamCoin/archive/master.zip 
+2) Download XDE2 source from https://github.com/CoinProjects/XDE2/archive/master.zip 
 
-2.1) Unpack to C:/AmsterdamCoin
+2.1) Unpack to C:/XDE2
 
 3) Install Perl for windows from the homepage http://www.activestate.com/activeperl/downloads
 
@@ -51,7 +51,7 @@ BUILD WINDOWS
 
 5) Run msys.bat located in C:\MinGW49-32\msys\1.0
 
-6) cd /C/AmsterdamCoin/src/leveldb
+6) cd /C/XDE2/src/leveldb
 
 7) Type "TARGET_OS=NATIVE_WINDOWS make libleveldb.a libmemenv.a" and hit enter to build leveldb
 
@@ -63,7 +63,7 @@ BUILD WINDOWS
 
 11) Type "49-32-qt5.bat" and hit enter to run
 
-12) cd ../AmsterdamCoin
+12) cd ../XDE2
 
 13) Type "qmake USE_UPNP=0" and hit enter to run
 
