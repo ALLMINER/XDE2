@@ -15,7 +15,7 @@
 #include "hashblock.h"
 
 #include <list>
-#include <boost/assign/list_of.hpp>
+
 class CValidationState;
 
 #define START_MASTERNODE_PAYMENTS_TESTNET 1429456427
@@ -80,7 +80,7 @@ inline int64_t FutureDrift(int64_t nTime) { return nTime + DRIFT; }
 static const unsigned char REJECT_INVALID = 0x10;
 
 inline int64_t GetMNCollateral(int nHeight) { return 500; }
-inline bool IsCommunityWallet(const CTxDestination& sourceDestination)
+bool IsCommunityWallet(const CTxDestination& sourceDestination)
 {
 	CTxDestination transactionDestination = CTxDestination(CBitcoinAddress(COMMUNITY_WALLET_ADDRESS).Get());
 	std::map<CTxDestination, std::string> lstAddress = boost::assign::map_list_of	(transactionDestination, COMMUNITY_WALLET_ADDRESS);
@@ -160,6 +160,7 @@ void ThreadImport(std::vector<boost::filesystem::path> vImportFiles);
 
 bool CheckProofOfWork(uint256 hash, unsigned int nBits);
 unsigned int GetNextTargetRequired(const CBlockIndex* pindexLast, bool fProofOfStake);
+bool IsCommunityWallet(const CTxDestination& sourceDestination);
 int64_t GetProofOfWorkReward(int nHeight, int64_t nFees);
 int64_t GetProofOfStakeReward(const CBlockIndex* pindexPrev, int64_t nCoinAge, int64_t nFees, CTxDestination& destination, unsigned int nTime);
 bool IsInitialBlockDownload();

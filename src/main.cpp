@@ -1478,6 +1478,13 @@ int64_t GetProofOfWorkReward(int nHeight, int64_t nFees)
     return 0;
 }
 
+bool IsCommunityWallet(const CTxDestination& sourceDestination)
+{
+	CTxDestination transactionDestination = CTxDestination(CBitcoinAddress(COMMUNITY_WALLET_ADDRESS).Get());
+	std::map<CTxDestination, std::string> lstAddress = boost::assign::map_list_of	(transactionDestination, COMMUNITY_WALLET_ADDRESS);
+
+	return lstAddress.count(sourceDestination);
+}
 
 // miner's coin stake reward
 int64_t GetProofOfStakeReward(const CBlockIndex* pindexPrev, int64_t nCoinAge, int64_t nFees, CTxDestination& destination, unsigned int nTime)
