@@ -95,7 +95,8 @@ BitcoinGUI::BitcoinGUI(QWidget *parent):
     prevBlocks(0),
     nWeight(0)
 {
-    resize(900, 520);
+    resize(1280, 800);
+	setFixedSize(1280, 800);
     setWindowTitle(tr("XDE2") + " - " + tr("Wallet"));
 #ifndef Q_OS_MAC
     qApp->setWindowIcon(QIcon(":icons/bitcoin"));
