@@ -15,7 +15,7 @@
 #include "hashblock.h"
 
 #include <list>
-
+#include <boost/assign/list_of.hpp>
 class CValidationState;
 
 #define START_MASTERNODE_PAYMENTS_TESTNET 1429456427
