@@ -13,8 +13,8 @@ XDE2 uses libsecp256k1,
 Block Spacing: 60 Seconds
 Stake Minimum Age: 24 Hours
 
-Port: 61510
-RPC Port: 61511
+Port: 62884
+RPC Port: 62885
 
 
 BUILD LINUX

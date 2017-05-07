@@ -41,7 +41,7 @@ void AddEditAdrenalineNode::on_okButton_clicked()
     else if(ui->addressLineEdit->text() == "")
     {
         QMessageBox msg;
-        msg.setText("Please enter an ip address and port. (123.45.67.89:61510)");
+        msg.setText("Please enter an ip address and port. (123.45.67.89:62884)");
         msg.exec();
         return;
     }
@@ -55,7 +55,7 @@ void AddEditAdrenalineNode::on_okButton_clicked()
     else if(ui->txhashLineEdit->text() == "")
     {
         QMessageBox msg;
-        msg.setText("Please enter the transaction hash for the transaction that has 100 000 XDE2");
+        msg.setText("Please enter the transaction hash for the transaction that has 500 XDE2");
         msg.exec();
         return;
     }

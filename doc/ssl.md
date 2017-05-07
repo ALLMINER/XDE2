@@ -1,6 +1,6 @@
 Enabling SSL on original client daemon
 ======================================
-By default, XDE2 allows JSON-RPC commands to be sent to http://localhost:61511
+By default, XDE2 allows JSON-RPC commands to be sent to http://localhost:62885
 and accepts connections only from the localhost.
 
 JSON-RPC Over SSL Setup

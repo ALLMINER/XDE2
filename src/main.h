@@ -21,15 +21,10 @@ class CValidationState;
 #define START_MASTERNODE_PAYMENTS_TESTNET 1429456427
 #define START_MASTERNODE_PAYMENTS 1429456427
 
-static const int64_t DARKSEND_COLLATERAL = (0.01*COIN);
-static const int64_t DARKSEND_POOL_MAX = (9999.99*COIN);
-
-static const int64_t STATIC_POS_REWARD = 1 * COIN; //Constant reward of 1 XDE2 per COIN i.e. 8%
-static const int64_t TARGET_SPACING = 60;
-
-static const std::string COMMUNITY_WALLET_ADDRESS = "afdVPH9xuGgnpWkuy1JLeF9XhqrjJmq1W6";
-static const int64_t COMMUNITY_PREMINE_END_TIME = 1498867200;
-static const int64_t COMMUNITY_PREMINE_AMOUNT = 40000000;
+static const int64_t DARKSEND_COLLATERAL = (0.00005*COIN);
+static const int64_t DARKSEND_POOL_MAX = (99.99*COIN);
+static const int64_t MAX_MINT_PROOF_OF_STAKE = 2 * COIN;
+static const int64_t TARGET_SPACING = 69;
 
 #define INSTANTX_SIGNATURES_REQUIRED           10
 #define INSTANTX_SIGNATURES_TOTAL              15
@@ -60,13 +55,13 @@ static const unsigned int MAX_TX_SIGOPS = MAX_BLOCK_SIGOPS/5;
 /** The maximum number of orphan transactions kept in memory */
 static const unsigned int MAX_ORPHAN_TRANSACTIONS = MAX_BLOCK_SIZE/100;
 /** Default for -maxorphanblocks, maximum number of orphan blocks kept in memory */
-static const unsigned int DEFAULT_MAX_ORPHAN_BLOCKS = 750;
+static const unsigned int DEFAULT_MAX_ORPHAN_BLOCKS = 75;
 /** Fees smaller than this (in satoshi) are considered zero fee (for transaction creation) */
-static const int64_t MIN_TX_FEE = 100;
+static const int64_t MIN_TX_FEE = 1;
 /** Fees smaller than this (in satoshi) are considered zero fee (for relaying) */
 static const int64_t MIN_RELAY_TX_FEE = MIN_TX_FEE;
 /** No amount larger than this (in satoshi) is valid */
-static const int64_t MAX_MONEY = 8400000000 * COIN;
+static const int64_t MAX_MONEY = 200000 * COIN;
 inline bool MoneyRange(int64_t nValue) { return (nValue >= 0 && nValue <= MAX_MONEY); }
 /** Threshold for nLockTime: below this value it is interpreted as block number, otherwise as UNIX timestamp. */
 static const unsigned int LOCKTIME_THRESHOLD = 500000000; // Tue Nov  5 00:53:20 1985 UTC
@@ -82,7 +77,7 @@ inline int64_t FutureDrift(int64_t nTime) { return nTime + DRIFT; }
 /** "reject" message codes **/
 static const unsigned char REJECT_INVALID = 0x10;
 
-inline int64_t GetMNCollateral(int nHeight) { return 100000; }
+inline int64_t GetMNCollateral(int nHeight) { return 500; }
 
 extern CScript COINBASE_FLAGS;
 extern CCriticalSection cs_main;

@@ -45,10 +45,10 @@ reachable from the Tor network. Add these lines to your /etc/tor/torrc (or equiv
 config file):
 
   HiddenServiceDir /var/lib/tor/XDE2-service/
-  HiddenServicePort 61510 127.0.0.1:61510
+  HiddenServicePort 62884 127.0.0.1:62884
 
 The directory can be different of course, but (both) port numbers should be equal to
-your XDE2d's P2P listen port (61510 by default).
+your XDE2d's P2P listen port (62884 by default).
 
 -externalip=X   You can tell litecoin about its publicly reachable address using
                 this option, and this can be a .onion address. Given the above
@@ -78,7 +78,7 @@ specify:
 
   ./XDE2d ... -discover
 
-and open port 61510 on your firewall (or use -upnp).
+and open port 62884 on your firewall (or use -upnp).
 
 If you only want to use Tor to reach onion addresses, but not use it as a proxy
 for normal IPv4/IPv6 communication, use:

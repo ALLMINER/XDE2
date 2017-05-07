@@ -57,13 +57,13 @@ public:
         // The message start string is designed to be unlikely to occur in normal data.
         // The characters are rarely used upper ASCII, not valid as UTF-8, and produce
         // a large 4-byte int at any alignment.
-        pchMessageStart[0] = 0xd3;
-        pchMessageStart[1] = 0x23;
-        pchMessageStart[2] = 0x1b;
-        pchMessageStart[3] = 0xeb;
-        vAlertPubKey = ParseHex("042d13c016ed91528241bcff222989769417eb10cdb679228c91e26e26900eb9fd053cd9f16a9a2894ad5ebbd551be1a4bd23bd55023679be17f0bd3a16e6fbeba");
-        nDefaultPort = 61510;
-        nRPCPort = 61511;
+        pchMessageStart[0] = 0xa3;
+        pchMessageStart[1] = 0x21;
+        pchMessageStart[2] = 0x9a;
+        pchMessageStart[3] = 0xaa;
+        vAlertPubKey = ParseHex("042d16c016ed91528241bcf0222989769417eb10cdb679228q91e26e26900eb9fd053cd9f16a9a2894ad5ebbd551be1a4bd23bd55023679be17f0bd3a16e6fbeba");
+        nDefaultPort = 62884;
+        nRPCPort = 62885;
         bnProofOfWorkLimit = CBigNum(~uint256(0) >> 16);
 
         // Build the genesis block. Note that the output of the genesis coinbase cannot
@@ -74,39 +74,36 @@ public:
         //    CTxIn(COutPoint(0000000000, 4294967295), coinbase 00012a24323020466562203230313420426974636f696e2041544d7320636f6d6520746f20555341)
         //    CTxOut(empty)
         //  vMerkleTree: 12630d16a9
-        const char* pszTimestamp = "Oktober 27, 2015: A great new start for XDE2.";
+        const char* pszTimestamp = "July 20th 1969 (first man on the moon)";
         std::vector<CTxIn> vin;
         vin.resize(1);
         vin[0].scriptSig = CScript() << 0 << CBigNum(42) << vector<unsigned char>((const unsigned char*)pszTimestamp, (const unsigned char*)pszTimestamp + strlen(pszTimestamp));
         std::vector<CTxOut> vout;
         vout.resize(1);
         vout[0].SetEmpty();
-        CTransaction txNew(1, 1445966961, vin, vout, 0);
+        CTransaction txNew(1, 1494013644, vin, vout, 0);
         genesis.vtx.push_back(txNew);
         genesis.hashPrevBlock = 0;
         genesis.hashMerkleRoot = genesis.BuildMerkleTree();
         genesis.nVersion = 1;
-        genesis.nTime    = 1445966961;
+        genesis.nTime    = 1494013644;
         genesis.nBits    = bnProofOfWorkLimit.GetCompact(); 
-        genesis.nNonce   = 156245;
+        genesis.nNonce   = 0;
 
         hashGenesisBlock = genesis.GetHash();
 
-        assert(hashGenesisBlock == uint256("0x00005e5044b1a81bef73dd7fc302fe157a3537ed5188401622f17e04efb16f20"));
-        assert(genesis.hashMerkleRoot == uint256("0xb86d3a400a5040d9e355b9ffb12cc1188c84fb8ac0da24f10d8323c2b87bf93a"));
+        assert(hashGenesisBlock == uint256("0x"));
+        assert(genesis.hashMerkleRoot == uint256("0x"));
 
         
-        base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1,83);
+        base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1,75);
         base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1,85);
         base58Prefixes[SECRET_KEY] =     std::vector<unsigned char>(1,153);
         base58Prefixes[STEALTH_ADDRESS] = std::vector<unsigned char>(1,40);
         base58Prefixes[EXT_PUBLIC_KEY] = list_of(0x04)(0x88)(0xB2)(0x1E).convert_to_container<std::vector<unsigned char> >();
         base58Prefixes[EXT_SECRET_KEY] = list_of(0x04)(0x88)(0xAD)(0xE4).convert_to_container<std::vector<unsigned char> >();
 
-        vSeeds.push_back(CDNSSeedData("First",  "XDE2.blockexplorer.pro"));
-		vSeeds.push_back(CDNSSeedData("Second",  "amshost1.dyndns.org"));
-		vSeeds.push_back(CDNSSeedData("MidnightMiner",  "ams.midnightminer.net"));
-		vSeeds.push_back(CDNSSeedData("MidnightMiner2",  "ams2.midnightminer.net"));
+        vSeeds.push_back(CDNSSeedData("First",  "xde2.blockexplorer.pro"));
 
         convertSeeds(vFixedSeeds, pnSeed, ARRAYLEN(pnSeed), nDefaultPort);
 
