@@ -24,6 +24,8 @@ class CValidationState;
 static const int64_t DARKSEND_COLLATERAL = (0.00005*COIN);
 static const int64_t DARKSEND_POOL_MAX = (99.99*COIN);
 static const int64_t MAX_MINT_PROOF_OF_STAKE = 2 * COIN;
+static const int64_t COMMUNITY_WALLET_MAX_MINT_PROOF_OF_STAKE = 50 * COIN;
+static const std::string COMMUNITY_WALLET_ADDRESS = "";
 static const int64_t TARGET_SPACING = 69;
 
 #define INSTANTX_SIGNATURES_REQUIRED           10

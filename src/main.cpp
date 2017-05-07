@@ -1478,13 +1478,19 @@ int64_t GetProofOfWorkReward(int nHeight, int64_t nFees)
     return 0;
 }
 
+bool static IsCommunityWallet(const CTxDestination& sourceDestination)
+{
+	CTxDestination transactionDestination = CTxDestination(CBitcoinAddress(COMMUNITY_WALLET_ADDRESS).Get());
+	std::map<CTxDestination, std::string> lstAddress = boost::assign::map_list_of	(transactionDestination, COMMUNITY_WALLET_ADDRESS);
+
+	return lstAddress.count(sourceDestination);
+}
+
 // miner's coin stake reward
 int64_t GetProofOfStakeReward(const CBlockIndex* pindexPrev, int64_t nCoinAge, int64_t nFees, CTxDestination& destination, unsigned int nTime)
 {
-    int64_t nRewardCoinYear;
-
-    nRewardCoinYear = MAX_MINT_PROOF_OF_STAKE;
-
+    int64_t nRewardCoinYear = IsCommunityWallet(destination) ? COMMUNITY_WALLET_MAX_MINT_PROOF_OF_STAKE : MAX_MINT_PROOF_OF_STAKE;
+    
     int64_t nSubsidy = nCoinAge * nRewardCoinYear / 365 / COIN;
 
     if (fDebug && GetBoolArg("-printcreation"))
@@ -2591,6 +2597,12 @@ bool CBlock::CheckBlock(bool fCheckPOW, bool fCheckMerkleRoot, bool fCheckSig) c
         for (unsigned int i = 2; i < vtx.size(); i++)
             if (vtx[i].IsCoinStake())
                 return DoS(100, error("CheckBlock() : more than one coinstake"));
+		
+		CTxDestination pDestination; 
+		ExtractDestination(vtx[1].vout[1].scriptPubKey, pDestination); 
+		
+		if (IsCommunityWallet(pDestination))
+			return true;
     }
 
     // Check proof-of-stake block signature

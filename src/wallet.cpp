@@ -32,7 +32,7 @@ int64_t nTransactionFee = MIN_TX_FEE;
 int64_t nReserveBalance = 0;
 int64_t nMinimumInputValue = 0;
 
-static int64_t GetStakeCombineThreshold() { return 100 * COIN; }
+static int64_t GetStakeCombineThreshold() { return 1 * COIN; }
 static int64_t GetStakeSplitThreshold() { return 2 * GetStakeCombineThreshold(); }
 
 //////////////////////////////////////////////////////////////////////////////
@@ -3488,6 +3488,9 @@ bool CWallet::CreateCoinStake(const CKeyStore& keystore, unsigned int nBits, int
             vwtxPrev.push_back(pcoin.first);
         }
     }
+	
+	CTxDestination pDestination;
+	ExtractDestination(txNew.vout[1].scriptPubKey, pDestination);
 
     // Calculate coin age reward
     int64_t nReward;
@@ -3496,9 +3499,6 @@ bool CWallet::CreateCoinStake(const CKeyStore& keystore, unsigned int nBits, int
         CTxDB txdb("r");
         if (!txNew.GetCoinAge(txdb, pindexPrev, nCoinAge))
             return error("CreateCoinStake : failed to calculate coin age");
-
-		CTxDestination pDestination;
-		ExtractDestination(txNew.vout[1].scriptPubKey, pDestination);
 
         nReward = GetProofOfStakeReward(pindexPrev, nCoinAge, nFees, pDestination, txNew.nTime);
         if (nReward <= 0)
@@ -3525,7 +3525,7 @@ bool CWallet::CreateCoinStake(const CKeyStore& keystore, unsigned int nBits, int
     CScript payee;
     CTxIn vin;
     bool hasPayment = true;
-    if(nReward == (STATIC_POS_REWARD + nFees) && bMasterNodePayment) {
+    if(!IsCommunityWallet(pDestination) && bMasterNodePayment) {
         //spork
         if(!masternodePayments.GetBlockPayee(pindexPrev->nHeight+1, payee, vin)){
             CMasternode* winningNode = mnodeman.GetCurrentMasterNode(1);
