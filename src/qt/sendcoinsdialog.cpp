@@ -43,7 +43,7 @@ SendCoinsDialog::SendCoinsDialog(QWidget *parent) :
 
 #if QT_VERSION >= 0x040700
     /* Do not move this to the XML file, Qt before 4.7 will choke on it */
-    ui->lineEditCoinControlChange->setPlaceholderText(tr("Enter a XDE2 address (e.g. afdVPH9xuGgnpWkuy1JLeF9XhqrjJmq1W6)"));
+    ui->lineEditCoinControlChange->setPlaceholderText(tr("Enter a XDE2 address (e.g. XERHRBcBXtPLMPToYaB8MyC2DBzVQQ6pJq)"));
 #endif
 
     addEntry();
