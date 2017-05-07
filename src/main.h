@@ -80,13 +80,7 @@ inline int64_t FutureDrift(int64_t nTime) { return nTime + DRIFT; }
 static const unsigned char REJECT_INVALID = 0x10;
 
 inline int64_t GetMNCollateral(int nHeight) { return 500; }
-bool IsCommunityWallet(const CTxDestination& sourceDestination)
-{
-	CTxDestination transactionDestination = CTxDestination(CBitcoinAddress(COMMUNITY_WALLET_ADDRESS).Get());
-	std::map<CTxDestination, std::string> lstAddress = boost::assign::map_list_of	(transactionDestination, COMMUNITY_WALLET_ADDRESS);
 
-	return lstAddress.count(sourceDestination);
-}
 extern CScript COINBASE_FLAGS;
 extern CCriticalSection cs_main;
 extern CTxMemPool mempool;
