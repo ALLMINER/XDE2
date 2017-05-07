@@ -52,6 +52,8 @@
         <file alias="browse">res/icons/browse.png</file>
         <file alias="trade">res/icons/trade.png</file>
 		<file alias="overviewbg">res/icons/overviewbg.png</file>
+		<file alias="3dsyncsymbol">res/icons/3d-sync-symbol.png</file>
+		
     </qresource>
     <qresource prefix="/icons/black">
         <file alias="connect_0">res/icons/black/connect0_16.png</file>
