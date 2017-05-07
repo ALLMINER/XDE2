@@ -103,7 +103,7 @@ public:
         convertSeeds(vFixedSeeds, pnSeed, ARRAYLEN(pnSeed), nDefaultPort);
 
         nPoolMaxTransactions = 3;
-        strDarksendPoolDummyAddress = "afkp2n3SvZESSt9dshLXX3pL46P7BqAKEy";
+        strDarksendPoolDummyAddress = "XQZ56tcwzdFUN2zCBuZzd7j4BCTZg6Fu4Q";
         nPOSStartBlock = 1;
     }
 
