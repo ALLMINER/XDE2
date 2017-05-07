@@ -1470,9 +1470,10 @@ static CBigNum GetProofOfStakeLimit(int nHeight)
 // miner's coin base reward
 int64_t GetProofOfWorkReward(int nHeight, int64_t nFees)
 {
+	//NO PREMINE, THIS IS TO SUPPORT THE SWAP
 	if (nHeight == 1)
 	{
-		return 15000000 * COIN;
+		return 29000 * COIN;
 	}
 			
     return 0;
