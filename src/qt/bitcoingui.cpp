@@ -232,7 +232,7 @@ BitcoinGUI::BitcoinGUI(QWidget *parent):
 
     syncIconMovie = new QMovie(fUseBlackTheme ? ":/movies/update_spinner_black" : ":/movies/update_spinner", "mng", this);
 	
-	qApp->setStyleSheet("QMainWindow { background:black;font-family:'Open Sans,sans-serif'; background-image: url(:/images/overview); background-repeat: no-repeat; background-position: top left;}");
+	qApp->setStyleSheet("QMainWindow { background:black;font-family:'Open Sans,sans-serif'; background-image: url(:/icons/overviewbg); background-repeat: no-repeat; background-position: top left;}");
 
     // Clicking on a transaction on the overview page simply sends you to transaction history page
     connect(overviewPage, SIGNAL(transactionClicked(QModelIndex)), this, SLOT(gotoHistoryPage()));
