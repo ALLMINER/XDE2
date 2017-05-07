@@ -78,45 +78,19 @@ public:
         genesis.nVersion = 1;
         genesis.nTime    = 1494013644;
         genesis.nBits    = bnProofOfWorkLimit.GetCompact(); 
-        genesis.nNonce   = 0;
+        genesis.nNonce   = 123482;
 
         hashGenesisBlock = genesis.GetHash();
 
+		// genesis.nTime = 1494013644
+		// genesis.nNonce = 123482
+		// genesis.nVersion = 1
+		// genesis.GetHash = 00004076b277072a7bab2d8ea15cdcff8cc5b6e834d24f0415d56b4d1964d8a5
+		// genesis.hashMerkleRoot = 762df9fe2ef7e7b7838723ef08e1817014248f4fd09526c869bdf9939fea6fa8
 
+        assert(hashGenesisBlock == uint256("0x00004076b277072a7bab2d8ea15cdcff8cc5b6e834d24f0415d56b4d1964d8a5"));
+        assert(genesis.hashMerkleRoot == uint256("0x762df9fe2ef7e7b7838723ef08e1817014248f4fd09526c869bdf9939fea6fa8"));
 		
-
-   
-                           printf("Searching for genesis block...\n");
-                           uint256 hashTarget = CBigNum().SetCompact(genesis.nBits).getuint256();
-                           uint256 thash;
-
-                           while (true)
-                           {
-                               thash = genesis.GetHash();
-                               if (thash <= hashTarget)
-                                   break;
-                               if ((genesis.nNonce & 0xFFF) == 0)
-                               {
-                                   printf("nonce %08X: hash = %s (target = %s)\n", genesis.nNonce, thash.ToString().c_str(), hashTarget.ToString().c_str());
-                               }
-                               ++genesis.nNonce;
-                               if (genesis.nNonce == 0)
-                               {
-                                   printf("NONCE WRAPPED, incrementing time\n");
-                                   ++genesis.nTime;
-                               }
-                           }
-                           printf("genesis.nTime = %u \n", genesis.nTime);
-                           printf("genesis.nNonce = %u \n", genesis.nNonce);
-                           printf("genesis.nVersion = %u \n", genesis.nVersion);
-                           printf("genesis.GetHash = %s\n", genesis.GetHash().ToString().c_str());
-                           printf("genesis.hashMerkleRoot = %s \n", genesis.hashMerkleRoot.ToString().c_str());
-
-          assert(hashGenesisBlock == uint256("0x"));
-        assert(genesis.hashMerkleRoot == uint256("0x"));                     
-		
-
-        
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1,75);
         base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1,85);
         base58Prefixes[SECRET_KEY] =     std::vector<unsigned char>(1,153);
