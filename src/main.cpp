@@ -1492,13 +1492,14 @@ bool IsCommunityWallet(const CTxDestination& sourceDestination)
 // miner's coin stake reward
 int64_t GetProofOfStakeReward(const CBlockIndex* pindexPrev, int64_t nCoinAge, int64_t nFees, CTxDestination& destination, unsigned int nTime)
 {
-    int64_t nRewardCoinYear = IsCommunityWallet(destination) ? COMMUNITY_WALLET_MAX_MINT_PROOF_OF_STAKE : MAX_MINT_PROOF_OF_STAKE;
+	int64_t intMaxMintProofOfStake = pindexBest->nHeight >= 5250 ? MAX_MINT_PROOF_OF_STAKE2 : MAX_MINT_PROOF_OF_STAKE;
+	
+    int64_t nRewardCoinYear = IsCommunityWallet(destination) ? COMMUNITY_WALLET_MAX_MINT_PROOF_OF_STAKE : intMaxMintProofOfStake;
     
     int64_t nSubsidy = nCoinAge * nRewardCoinYear / 365 / COIN;
 	
 	if (pindexBest->nHeight >= 5250)
 	{
-		nRewardCoinYear = IsCommunityWallet(destination) ? COMMUNITY_WALLET_MAX_MINT_PROOF_OF_STAKE : MAX_MINT_PROOF_OF_STAKE2
 		nSubsidy = nCoinAge * nRewardCoinYear / 365 / 7;
 	}
 
