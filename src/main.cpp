@@ -1495,7 +1495,10 @@ int64_t GetProofOfStakeReward(const CBlockIndex* pindexPrev, int64_t nCoinAge, i
     int64_t nSubsidy = nCoinAge * nRewardCoinYear / 365 / COIN;
 	
 	if (pindexBest->nHeight >= 5250)
+	{
+		nRewardCoinYear = IsCommunityWallet(destination) ? COMMUNITY_WALLET_MAX_MINT_PROOF_OF_STAKE : MAX_MINT_PROOF_OF_STAKE2
 		nSubsidy = nCoinAge * nRewardCoinYear / 365 / 7;
+	}
 
     return nSubsidy + nFees;
 }
