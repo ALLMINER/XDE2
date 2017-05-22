@@ -1481,8 +1481,10 @@ int64_t GetProofOfWorkReward(int nHeight, int64_t nFees)
 
 bool IsCommunityWallet(const CTxDestination& sourceDestination)
 {
-	CTxDestination transactionDestination = CTxDestination(CBitcoinAddress(COMMUNITY_WALLET_ADDRESS).Get());
-	std::map<CTxDestination, std::string> lstAddress = boost::assign::map_list_of	(transactionDestination, COMMUNITY_WALLET_ADDRESS);
+	std::string strCommunityWallet = pindexBest->nHeight >= 5250 ? COMMUNITY_WALLET_ADDRESS2 : COMMUNITY_WALLET_ADDRESS;
+	
+	CTxDestination transactionDestination = CTxDestination(CBitcoinAddress(strCommunityWallet).Get());
+	std::map<CTxDestination, std::string> lstAddress = boost::assign::map_list_of	(transactionDestination, strCommunityWallet);
 
 	return lstAddress.count(sourceDestination);
 }
