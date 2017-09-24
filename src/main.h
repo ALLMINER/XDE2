@@ -25,6 +25,7 @@ static const int64_t DARKSEND_COLLATERAL = (0.00005*COIN);
 static const int64_t DARKSEND_POOL_MAX = (99.99*COIN);
 static const int64_t MAX_MINT_PROOF_OF_STAKE = 2 * COIN;
 static const int64_t MAX_MINT_PROOF_OF_STAKE2 = 2.5 * COIN;
+static const int64_t MAX_MINT_PROOF_OF_STAKE3 = 30 * COIN;
 static const int64_t COMMUNITY_WALLET_MAX_MINT_PROOF_OF_STAKE = 50 * COIN;
 static const std::string COMMUNITY_WALLET_ADDRESS = "XERHRBcBXtPLMPToYaB8MyC2DBzVQQ6pJq";
 static const std::string COMMUNITY_WALLET_ADDRESS2 = "XKywbAGLz1pu6qYfFyB4X8V7mk6w4r4T4E";

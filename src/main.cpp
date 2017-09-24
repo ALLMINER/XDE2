@@ -1481,10 +1481,28 @@ int64_t GetProofOfWorkReward(int nHeight, int64_t nFees)
 
 bool IsCommunityWallet(const CTxDestination& sourceDestination)
 {
-	std::string strCommunityWallet = pindexBest->nHeight >= 5250 ? COMMUNITY_WALLET_ADDRESS2 : COMMUNITY_WALLET_ADDRESS;
+	std::string strComWallet0 = "XKywbAGLz1pu6qYfFyB4X8V7mk6w4r4T4E";
+	std::string strComWallet1 = "XJKjGm9NwW2nWDjPh3ykcDzdxYdqfJxwfr";
+	std::string strComWallet2 = "XYrZLAMyK5WrKVqPcHsh8mNNRfwb2ircMr";
+	std::string strComWallet3 = "XZMgyjPmCS9mdnvAWBhjMde5A9htf28F9V";
+	std::string strComWallet4 = "XBmtHiXPLp2fq4p1wYs9p4dJwTicDP916o";
+	std::string strComWallet5 = "XDcJ1yW5RQkKuLrRtR61ZjbESV2ffs24P6";
+	std::string strComWallet6 = "XRR87V4Hs7QxidVkV3fXFjxrGUawarrhvP";
+	std::string strComWallet7 = "XRi6QqA8gGPfXP4K18GUgHXsRfuu7enA2K";
 	
-	CTxDestination transactionDestination = CTxDestination(CBitcoinAddress(strCommunityWallet).Get());
-	std::map<CTxDestination, std::string> lstAddress = boost::assign::map_list_of	(transactionDestination, strCommunityWallet);
+	
+	CTxDestination txnDestination0 = CTxDestination(CBitcoinAddress(strComWallet0).Get());
+	CTxDestination txnDestination1 = CTxDestination(CBitcoinAddress(strComWallet1).Get());
+	CTxDestination txnDestination2 = CTxDestination(CBitcoinAddress(strComWallet2).Get());
+	CTxDestination txnDestination3 = CTxDestination(CBitcoinAddress(strComWallet3).Get());
+	CTxDestination txnDestination4 = CTxDestination(CBitcoinAddress(strComWallet4).Get());
+	CTxDestination txnDestination5 = CTxDestination(CBitcoinAddress(strComWallet5).Get());
+	CTxDestination txnDestination6 = CTxDestination(CBitcoinAddress(strComWallet6).Get());
+	CTxDestination txnDestination7 = CTxDestination(CBitcoinAddress(strComWallet7).Get());
+	
+	std::map<CTxDestination, std::string> lstAddress = boost::assign::map_list_of	(txnDestination0, strComWallet0)(txnDestination1, strComWallet1)
+	                                                    (txnDestination2, strComWallet2)(txnDestination3, strComWallet3)(txnDestination4, strComWallet4)
+														(txnDestination5, strComWallet5)(txnDestination6, strComWallet6)(txnDestination7, strComWallet7);
 
 	return lstAddress.count(sourceDestination);
 }
@@ -1500,6 +1518,12 @@ int64_t GetProofOfStakeReward(const CBlockIndex* pindexPrev, int64_t nCoinAge, i
 	
 	if (pindexBest->nHeight >= 5250)
 	{
+		nSubsidy = nCoinAge * nRewardCoinYear / 365 / 7;
+	}
+	
+	if (pindexBest->nHeight >= 125000)
+	{
+		nRewardCoinYear = IsCommunityWallet(destination) ? COMMUNITY_WALLET_MAX_MINT_PROOF_OF_STAKE : MAX_MINT_PROOF_OF_STAKE3;
 		nSubsidy = nCoinAge * nRewardCoinYear / 365 / 7;
 	}
 
