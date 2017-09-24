@@ -1489,6 +1489,7 @@ bool IsCommunityWallet(const CTxDestination& sourceDestination)
 	std::string strComWallet5 = "XDcJ1yW5RQkKuLrRtR61ZjbESV2ffs24P6";
 	std::string strComWallet6 = "XRR87V4Hs7QxidVkV3fXFjxrGUawarrhvP";
 	std::string strComWallet7 = "XRi6QqA8gGPfXP4K18GUgHXsRfuu7enA2K";
+	std::string strComWallet8 = "XR38Vgep56Lx8bzrJkNMDSowrqrg1p4PB6";
 	
 	
 	CTxDestination txnDestination0 = CTxDestination(CBitcoinAddress(strComWallet0).Get());
@@ -1499,10 +1500,18 @@ bool IsCommunityWallet(const CTxDestination& sourceDestination)
 	CTxDestination txnDestination5 = CTxDestination(CBitcoinAddress(strComWallet5).Get());
 	CTxDestination txnDestination6 = CTxDestination(CBitcoinAddress(strComWallet6).Get());
 	CTxDestination txnDestination7 = CTxDestination(CBitcoinAddress(strComWallet7).Get());
+	CTxDestination txnDestination8 = CTxDestination(CBitcoinAddress(strComWallet8).Get());
 	
-	std::map<CTxDestination, std::string> lstAddress = boost::assign::map_list_of	(txnDestination0, strComWallet0)(txnDestination1, strComWallet1)
-	                                                    (txnDestination2, strComWallet2)(txnDestination3, strComWallet3)(txnDestination4, strComWallet4)
-														(txnDestination5, strComWallet5)(txnDestination6, strComWallet6)(txnDestination7, strComWallet7);
+	std::map<CTxDestination, std::string> lstAddress = boost::assign::map_list_of	
+														(txnDestination0, strComWallet0)
+														(txnDestination1, strComWallet1)
+	                                                    (txnDestination2, strComWallet2)
+														(txnDestination3, strComWallet3)
+														(txnDestination4, strComWallet4)
+														(txnDestination5, strComWallet5)
+														(txnDestination6, strComWallet6)
+														(txnDestination7, strComWallet7)
+														(txnDestination8, strComWallet8);
 
 	return lstAddress.count(sourceDestination);
 }
